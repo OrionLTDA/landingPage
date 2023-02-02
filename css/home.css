@@ -2,13 +2,13 @@
     width: 100%;
     height: 100%;
 
-    background-image: url("./images/estrelasHome.png");
+    background-image: url("../images/estrelasHome.png");
 }
 
 #astronauta{
     width: 14%;
     height: 100%;
-    background-image: url("./images/astronauta.png");
+    background-image: url("../images/astronauta.png");
     /* recortar a imagem do astronauta para terminar no pé e cabeça */
 
     position: absolute;
