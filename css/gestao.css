@@ -1,0 +1,24 @@
+#gestaoText {
+
+    width: 100%;
+    font-size: 20px;
+}
+
+#gestaoText > .text{
+    width: 70%;
+    padding: 30px;
+
+    gap: 30px;
+}
+
+#gestaoText > .text > h3{
+    text-align: center;
+    padding: 30px;
+    font-size: 26px;
+    color: lightblue;
+}
+
+#gestaoText > .text > ul > li{
+    margin: 20px;
+}
+

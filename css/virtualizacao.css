@@ -1,0 +1,23 @@
+.virtualizacao{
+    padding: 30px;
+}
+
+.virtualizacaoIMG{
+    width: 100%;
+    height: 200px;
+
+    background-color: aliceblue;
+}
+
+.virtualizacaoUL{
+    font-size: 20px;
+    padding: 30px;
+}
+
+.virtualizacaoUL > ul{
+    width: 80%;
+}
+
+.virtualizacaoUL > ul > li{
+    margin: 20px;
+}

@@ -1,0 +1,37 @@
+#cards{
+    width: 100%;
+
+    padding: 50px;
+
+    gap: 30px;
+
+    font-size: 20px;
+}
+
+.card{
+    width: 350px;
+
+    padding: 30px 0;
+
+    background: linear-gradient( 290deg, rgba(0, 0, 0, .6),  rgba(100, 100, 100, .6) );
+
+    border: 1px solid white;
+    border-radius: 20px;
+
+}
+
+.card > h3{
+    width: 85%;
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(to right, white,blue) 1;
+}
+
+.card > p{
+    padding: 30px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
