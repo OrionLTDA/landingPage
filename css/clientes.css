@@ -1,0 +1,30 @@
+#clientes{
+    width: 100%;
+    /* padding: 50px; */
+    gap: 30px;
+}
+
+.clientesIcon{
+    width: 250px;
+    height: 250px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#lindimais{
+    background-image: url("../images/lindimais.png");
+}
+
+#fastmedic{
+    background-image: url("../images/fastmedic.png");
+}
+
+#ufma{
+    background-image: url("../images/ufma.png");
+}
+
+#brall{
+    background-image: url("../images/brall.png");
+}

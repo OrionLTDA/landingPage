@@ -1,18 +1,15 @@
 #cards{
     width: 100%;
-
-    padding: 50px;
+    /* padding: 50px; */
 
     gap: 30px;
-
     font-size: 20px;
 }
 
 .card{
     width: 350px;
-
     padding: 30px 0;
-
+    
     background: linear-gradient( 290deg, rgba(0, 0, 0, .6),  rgba(100, 100, 100, .6) );
 
     border: 1px solid white;

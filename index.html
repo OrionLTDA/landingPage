@@ -12,19 +12,40 @@
   <link rel="stylesheet" type="text/css" href="./css/cards.css">
   <link rel="stylesheet" type="text/css" href="./css/gestao.css">
   <link rel="stylesheet" type="text/css" href="./css/virtualizacao.css">
+  <link rel="stylesheet" type="text/css" href="./css/sliders.css">
+  <link rel="stylesheet" type="text/css" href="./css/suporte.css">
+  <link rel="stylesheet" type="text/css" href="./css/outrosServicos.css">
+  <link rel="stylesheet" type="text/css" href="./css/clientes.css">
+  <link rel="stylesheet" type="text/css" href="./css/contato.css">
+  <link rel="stylesheet" type="text/css" href="./css/footer.css">
 
 </head>
 
 <body>
+  <header id="header">
+
+  </header>
+
   <section class="home flex background">
     <div id="astronauta"></div>
+
+    <div id="orion" class="flex">
+      <p id="orionTitle">.orion</p>
+
+      <div id="solucTec">
+        <p>Soluções</p>
+        <p>Tecnológicas</p>
+      </div>
+    </div>
+
+    <div id="sun"></div>
   </section>
 
   <div class="quemSomos flex index">
     <p>Quem somos</p>
   </div>
 
-  <section id="cards" class="flex index background">
+  <section id="cards" class="flex index background defaultSection">
 
     <div id="surgimento" class="card flex">
       <h3>Surgimento</h3>
@@ -58,7 +79,7 @@
     <p>Gestão empresarial</p>
   </div>
 
-  <section id="gestaoText" class="flex index background">
+  <section id="gestaoText" class="flex index background defaultSection">
     <div class="text">
       <h3>Por que sua empresa deveria investir em um sistema de gestão empresarial? </h3>
 
@@ -92,7 +113,7 @@
     <p>Virtualização de processos</p>
   </div>
 
-  <section id="virtualizacao" class="flex index background">
+  <section id="virtualizacao" class="flex index background defaultSection">
 
     <div class="virtualizacaoIMG flex"> 
       <!-- <div> IMAGEM </div> -->
@@ -111,17 +132,124 @@
       </ul>
     </div>
 
-    <div id="slider">
-      <div id="slides">
-
+    <div class="slider flex">
+      <div class="slides">                   
+          <input type="radio" name="radio-bnt" id="radio1">
+          <input type="radio" name="radio-bnt" id="radio2">
+          <input type="radio" name="radio-bnt" id="radio3">
+      
+          <div class="slide first">
+              <img src="/images/Frame 31.png" alt="Imagem'1">
+          </div>
+          <div class="slide">
+              <img src="/images/Frame 32.png" alt="Imagem2">
+          </div>
+          <div class="slide">
+              <img src="/images/Frame 33.png" alt="Imagem3">
+          </div>
       </div>
-    </div>
+      <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+      </div>
+  </div>
   </section>
 
   <div class="quemSomos flex index">
     <p>Suporte de T.I</p>
   </div>
 
+  <section id="suporte" class="flex index defaultSection">
+    <ul>
+      <li>Hoje tudo está conectado! Desde o setor fiscal até o almoxarifado. Cada dia mais usamos mais Apps que facilitam nossa vida e aproximam as pessoas.</li>
+      <li>Por isso você DEVE ter uma equipe de T.I. para garantir o bom funcionamento, o "carinha do computador" é um personagem essencial na sua empresa.</li>
+      <li>A Orion oferece uma equipe pronta sob demanda para atender.</li>
+    </ul>
+  </section>
+
+  <div class="quemSomos flex index">
+    <p>Outros serviços</p>
+  </div>
+
+  <section id="outrosServicos" class="flex index background defaultSection">
+
+    <div class="cardServicos flex">
+      <div id="atomos" class="servicosIMG flex"></div>
+
+      <h3>Desenvolvimento de Software</h3>
+
+
+      <div class="textServicos">
+        Está cansado de ter que adequar sua produção à sistemas inflexíveis e nada convencionais? Nós da Orion possibilitamos aos nossos clientes toda a excelência de nossa fábrica de softwares.
+      </div>
+    </div>
+
+    <div class="cardServicos flex">
+      <div id="prontuario" class="servicosIMG flex"></div>
+
+      <h3>Prontuário Eletrônico</h3>
+
+      <div class="textServicos">
+        A Orion Saúde é uma solução que utiliza o que há de mais avançado no mercado para entregar um fluxo de trabalho nos moldes do ministério da saúde, que consiga ser tanto prático quanto eficaz na gestão da atenção primária, secundária e terciária, assim como acompanhar o constante avanço das deliberações do ministério da saúde.
+      </div>
+    </div>
+  </section>
+
+  <div class="quemSomos flex index">
+    <p>clientes</p>
+  </div>
+
+  <section id="clientes" class="flex index background defaultSection">
+    <div id="lindimais" class="clientesIcon"></div>
+    <div id="fastmedic" class="clientesIcon"></div>
+    <div id="ufma" class="clientesIcon"></div>
+    <div id="brall" class="clientesIcon"></div>
+  </section>
+
+  <div class="quemSomos flex index">
+    <p>fale conosco</p>
+  </div>
+
+  <section id="contato" class="flex index background defaultSection">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2815.237064791969!2d-38.50646247061441!3d-3.7344607316764002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c748606b3aaaab%3A0x3d50a2148013e98!2zT3Jpb24gU29sdcOnw7VlcyBUZWNub2zDs2dpY2Fz!5e0!3m2!1spt-BR!2sbr!4v1675518399964!5m2!1spt-BR!2sbr" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="contatos flex">
+      <div class="email">
+        <p>E-mail:</p>
+        <a>contato@orionsolucoes.com.br</a>
+      </div>
+
+      <div class="telefone">
+        <p>Telefone para contato:</p>
+        <p>(85) 3219-8874</p>
+      </div>
+
+      <div class="redesSociais">
+
+        <p>Redes Sociais:</p>
+        <div class="socialsLogos flex">
+          <ion-icon class="linkedinLogo sLogo" name="logo-linkedin"></ion-icon>
+          <ion-icon class="instagramLogo sLogo" name="logo-instagram"></ion-icon>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="quemSomos flex">
+    <p>
+      Orion Soluções em Tecnologia Unipessoal LTDA. CNPJ: 35.674.634/0001-04. 		
+      Av. Santos Dumont, 2122. Sala 1207 - Fortaleza/CE.
+    </p>
+  </footer>
+
+  <a id="homeButton" class="flex" href="#">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

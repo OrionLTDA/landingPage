@@ -1,0 +1,48 @@
+#outrosServicos{
+    width: 100%;
+    /* padding: 30px; */
+
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.cardServicos{
+    width: 400px;
+    
+    justify-content: flex-start;
+    flex-flow: column;
+    gap: 30px;
+}
+
+/* IMAGENS */
+
+.cardServicos > .servicosIMG{
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    
+}
+
+.cardServicos > #atomos{
+    background-image: url("../images/atomos.png");
+}
+
+.cardServicos > #prontuario{
+    background-image: url("../images/prontuario.png");
+}
+
+.cardServicos > h3{
+    width: 60%;
+    text-align: center;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cardServicos > .textServicos{
+    width: 60%;
+    letter-spacing: 2px;
+    line-height: 30px;
+}

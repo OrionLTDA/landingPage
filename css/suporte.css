@@ -1,0 +1,8 @@
+#suporte{
+    font-size: 20px;
+    /* padding: 30px; */
+}
+
+#suporte > ul{
+    width: 80%;
+}

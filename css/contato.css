@@ -1,0 +1,30 @@
+#contato{
+    align-items: flex-start;
+    gap: 100px;
+
+    padding-bottom: 0;
+}
+
+.contatos{
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+
+    font-size: medium;
+    font-weight: bold;
+
+    /* background-color: aqua; */
+}
+
+.socialsLogos{
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.sLogo{
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+}
