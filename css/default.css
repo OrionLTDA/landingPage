@@ -39,13 +39,14 @@ body, html{
 }
 
 /* dar outro nome para quem somos */
-.quemSomos{
+.divisor{
     padding: 30px;
     background-color: var(--themeColor);
 
     font-size: 3em;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: center;
 
     position: relative;
     z-index: 2;
@@ -53,7 +54,7 @@ body, html{
 
 .defaultSection{
     width: 100%;
-    padding: 35px;
+    padding: 50px;
 }
 
 /* HOME BUTTON */

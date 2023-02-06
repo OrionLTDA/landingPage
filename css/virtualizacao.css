@@ -1,13 +1,14 @@
 .virtualizacaoIMG{
     width: 100%;
     height: 200px;
+    gap: 50px;
 
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
 }
 
 .virtualizacaoIMG > img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 
 }
 
