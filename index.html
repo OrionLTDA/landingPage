@@ -19,6 +19,8 @@
   <link rel="stylesheet" type="text/css" href="./css/contato.css">
   <link rel="stylesheet" type="text/css" href="./css/footer.css">
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 
 <body>
@@ -116,7 +118,8 @@
   <section id="virtualizacao" class="flex index background defaultSection">
 
     <div class="virtualizacaoIMG flex"> 
-      <!-- <div> IMAGEM </div> -->
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
     </div>
 
     <div class="virtualizacaoUL flex">
@@ -133,22 +136,24 @@
     </div>
 
     <div class="slider flex">
-      <div class="slides">                   
-          <input type="radio" name="radio-bnt" id="radio1">
-          <input type="radio" name="radio-bnt" id="radio2">
-          <input type="radio" name="radio-bnt" id="radio3">
       
-          <div class="slide first">
-              <img src="/images/Frame 31.png" alt="Imagem'1">
-          </div>
-          <div class="slide">
-              <img src="/images/Frame 32.png" alt="Imagem2">
-          </div>
-          <div class="slide">
-              <img src="/images/Frame 33.png" alt="Imagem3">
-          </div>
+      <div class="slides flex" >                   
+        <input type="radio" name="radio-bnt" id="radio1">
+        <input type="radio" name="radio-bnt" id="radio2">
+        <input type="radio" name="radio-bnt" id="radio3">
+
+        <div class="slide first">
+            <img src="/images/Frame 31.png" alt="Imagem1">
+        </div>
+        <div class="slide">
+            <img src="/images/Frame 32.png" alt="Imagem2">
+        </div>
+        <div class="slide">
+            <img src="/images/Frame 33.png" alt="Imagem3">
+        </div>
       </div>
-      <div class="manual-navigation">
+
+      <div class="manual-navigation flex">
           <label for="radio1" class="manual-btn"></label>
           <label for="radio2" class="manual-btn"></label>
           <label for="radio3" class="manual-btn"></label>
@@ -212,29 +217,38 @@
   </div>
 
   <section id="contato" class="flex index background defaultSection">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2815.237064791969!2d-38.50646247061441!3d-3.7344607316764002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c748606b3aaaab%3A0x3d50a2148013e98!2zT3Jpb24gU29sdcOnw7VlcyBUZWNub2zDs2dpY2Fz!5e0!3m2!1spt-BR!2sbr!4v1675518399964!5m2!1spt-BR!2sbr" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div id="contatoDiv" class="flex">
 
-    <div class="contatos flex">
-      <div class="email">
-        <p>E-mail:</p>
-        <a>contato@orionsolucoes.com.br</a>
-      </div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2815.237064791969!2d-38.50646247061441!3d-3.7344607316764002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c748606b3aaaab%3A0x3d50a2148013e98!2zT3Jpb24gU29sdcOnw7VlcyBUZWNub2zDs2dpY2Fz!5e0!3m2!1spt-BR!2sbr!4v1675518399964!5m2!1spt-BR!2sbr" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-      <div class="telefone">
-        <p>Telefone para contato:</p>
-        <p>(85) 3219-8874</p>
-      </div>
+      <div class="contatos flex">
+        <div class="email">
+          <p>E-mail:</p>
+          <a>contato@orionsolucoes.com.br</a>
+        </div>
 
-      <div class="redesSociais">
+        <div class="telefone">
+          <p>Telefone para contato:</p>
+          <p>(85) 3219-8874</p>
+        </div>
 
-        <p>Redes Sociais:</p>
-        <div class="socialsLogos flex">
-          <ion-icon class="linkedinLogo sLogo" name="logo-linkedin"></ion-icon>
-          <ion-icon class="instagramLogo sLogo" name="logo-instagram"></ion-icon>
+        <div class="redesSociais">
+
+          <p>Redes Sociais:</p>
+          <div class="socialsLogos flex">
+            <ion-icon class="linkedinLogo sLogo" name="logo-linkedin"></ion-icon>
+            <ion-icon class="instagramLogo sLogo" name="logo-instagram"></ion-icon>
+          </div>
+
         </div>
 
       </div>
     </div>
+
+    <div id="fotoEquipe">
+      <div id="equipe"></div>
+    </div>
+
   </section>
 
   <footer id="footer" class="quemSomos flex">
@@ -248,6 +262,32 @@
     <ion-icon name="arrow-up-outline"></ion-icon>
   </a>
 
+
+  <script>
+    let radio1 = $("#radio1");
+    let radio2 = $("#radio2");
+    let radio3 = $("#radio3");
+    let radioButton = $(".manual-btn");
+    radio1.checked = true 
+    
+    radioButton.on("click", () => {
+      changeRadioSelected()
+    })
+
+    function changeRadioSelected(){
+      if(radio1.checked){
+        radio2.checked = true;  
+      }else if(radio2.checked){
+          radio3.checked = true;
+      }else if(radio3.checked){
+          radio4.checked = true;  
+      }else if(radio4.checked){
+          radio1.checked = true; 
+      }
+    }
+
+   
+  </script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

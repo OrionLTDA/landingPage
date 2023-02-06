@@ -1,8 +1,14 @@
 #contato{
-    align-items: flex-start;
+    flex-flow: column;
+    /* align-items: flex-start; */
     gap: 100px;
 
     padding-bottom: 0;
+}
+
+#contatoDiv{
+    width: 100%;
+    gap: 40px;
 }
 
 .contatos{
@@ -17,6 +23,8 @@
     /* background-color: aqua; */
 }
 
+
+
 .socialsLogos{
     justify-content: flex-start;
     gap: 30px;
@@ -27,4 +35,29 @@
     height: 40px;
 
     cursor: pointer;
+}
+
+#fotoEquipe{
+    width: 90%;
+    height: 400px;
+
+    padding: 5%;
+    padding-bottom: 0;
+
+    overflow: hidden;
+}
+
+#equipe{
+    width: 100%;
+    height: 100%;
+
+    background-image: url("../images/equipe.png");
+    background-size: 100% 100%;
+    /* background-size: cover; */
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    bottom: -100px;
+    /* left: 50%; */
 }

@@ -1,22 +1,23 @@
 :root{
-    --sliderSize: 800px;
+    --sliderSize: 700px;
 }
-
 
 .slider{
     width:var(--sliderSize);
-
+    justify-content: flex-start;
     overflow: hidden;
-
-    /* background-color: aliceblue; */
 }
+
+
+.slides{
+    display: flex;
+    flex-flow: row;    
+}
+
 .slide{
     transition: 0.5s;
 }
-.slides{
-    display: flex;
-    flex-flow: row;
-}
+
 .slide img{
     width: var(--sliderSize);
 }
@@ -25,14 +26,12 @@
 }
 
 .manual-navigation{
-    display: flex;
-    flex-flow: row;
+    width: 100%;
     gap: 30px; 
-
 }
 
 .manual-btn{
-    padding: 8px;
+    padding: 10px;
     
     cursor: pointer;
     transition: 0.5s;
@@ -44,12 +43,37 @@
 .manual-btn:hover{
     background-color: var(--themeColor);
 }
+
 #radio1:checked ~ .first{
-    margin-left:0;
+    margin-left: 0;
 }
 #radio2:checked ~ .first{
-    margin-left: -25rem;
+    margin-left: calc( -1* var(--sliderSize)) ;
 }
 #radio3:checked ~ .first{
-    margin-left: -50rem;
+    margin-left: calc( -2* var(--sliderSize)) ;;
 }
+
+.btn{
+    position: relative;
+    padding: 5px;
+
+    cursor: pointer;
+    background-color: aliceblue;
+
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.prev{
+    
+    /* top: 0; */
+    left: 0;
+}
+
+.next{
+    position: relative;
+    /* bottom: -50%; */
+    right: 0;
+}
+

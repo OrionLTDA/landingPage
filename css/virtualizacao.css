@@ -5,6 +5,12 @@
     background-color: aliceblue;
 }
 
+.virtualizacaoIMG > img{
+    width: 100px;
+    height: 100px;
+
+}
+
 .virtualizacaoUL{
     font-size: 20px;
     padding: 30px;
