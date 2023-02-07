@@ -39,7 +39,9 @@
 }
 
 .cardServicos > .textServicos{
-    width: 60%;
+    
+    width: 80%;
+    background-color: brown;
     letter-spacing: 2px;
     line-height: 30px;
 }

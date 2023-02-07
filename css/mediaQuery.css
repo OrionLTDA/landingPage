@@ -1,0 +1,166 @@
+@media only screen and (max-width: 1200px) {
+
+
+
+    /* CONTATO */
+    #fotoEquipe{
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    /* GESTAO */
+    #gestaoText > .text{
+        width: 100%;
+    }
+
+    /* SERVIÇOS */
+    .cardServicos{
+        width: 350px;
+        background-color: brown;
+    }
+
+    /* VIRTUALIZAÇÂO */
+    .virtualizacaoUL{
+        padding: 0;
+    }
+
+    .cardServicos > .servicosIMG{
+        width: 200px;
+        height: 200px;
+    }
+
+    .cardServicos > .textServicos{
+        width: 100%;
+        
+    }
+
+
+    /* CONTATO */
+    #fotoEquipe{
+        height: 200px;
+    }
+
+    #equipe{
+        bottom: -80px;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    /* QUEM SOMOS */
+    .card{
+        width: 450px;
+        text-align: center;
+    }
+
+    /* VIRTUALIZAÇÂO */
+    .virtualizacaoUL > ul{
+        width: 100%;
+    }
+        /* SLIDER */
+        :root{
+            --sliderSize: 600px;
+        }
+
+    /* SERVIÇOS */
+    .cardServicos{
+        width: 80%;
+        text-align: center;
+    }
+
+    /* CONTATO */
+    .contatos{
+        width: 100%;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 50px;
+        text-align: center;
+    }
+}
+
+
+
+@media only screen and (max-width: 700px) {
+
+    /* DEFAULT */
+    .defaultSection{
+        padding: 30px;
+    }
+
+    /* SLIDER */
+    :root{
+        --sliderSize: 500px;
+    }
+
+    /* CONTATO */
+    #fotoEquipe{
+        height: 150px;
+    }
+
+    #equipe{
+        bottom: -50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* DEFAULT */
+    .defaultSection{
+        padding: 20px;
+    }
+
+    .divisor{
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    /* SLIDER */
+    :root{
+        --sliderSize: 400px;
+    }
+
+
+    /* CLIENTES */
+    .clientesIcon{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    /* SLIDER */
+    :root{
+        --sliderSize: 300px;
+    }
+
+    /* CLIENTES */
+    .clientesIcon{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+
+/* ====================================== */
+/* HEIGHT */
+/* ====================================== */
+
+@media only screen and (max-height: 700px) {
+
+    /* HOME */
+    #orion{
+        top: 20%;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+
+    /* HOME */
+    #orion{
+        top: 10%;
+    }
+}

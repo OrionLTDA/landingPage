@@ -1,7 +1,12 @@
 #suporte{
     font-size: 20px;
+    
 }
 
 #suporte > ul{
-    width: 80%;
+    width: 80%;    
+}
+
+#suporte > ul > li{
+    margin: 20px;
 }
