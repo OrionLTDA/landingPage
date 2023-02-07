@@ -1,6 +1,6 @@
 #quemSomos{
     gap: 30px;
-    font-size: 20px;
+    font-size: var(--fontSize);
 }
 
 .card{
@@ -16,7 +16,7 @@
 .card > h3{
     width: 85%;
     padding-bottom: 20px;
-    font-size: 30px;
+    
     font-weight: bold;
     text-align: center;
     border-bottom: 1px solid;
@@ -24,6 +24,7 @@
 }
 
 .card > p{
+    height: 100%;
     padding: 30px;
     letter-spacing: 2px;
     line-height: 30px;

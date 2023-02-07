@@ -1,5 +1,6 @@
 :root{
-    --themeColor: rgb(11, 11, 85);
+    --themeColor: rgba(11, 11, 85, .8);
+    --fontSize: 18px;
 }
 
 *{
@@ -8,6 +9,7 @@
     box-sizing: border-box;
     /* font-family: "Exo", Arial; */
     font-family: 'Orbitron', Arial;
+    font-size: var(--fontSize);
 }
 
 body, html{
@@ -85,3 +87,30 @@ body, html{
 #homeButton > ion-icon{
     color: black;
 }
+
+
+/* SCROLL BAR */
+
+/* body::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+body::-webkit-scrollbar-track {
+    background: rgb(0, 0, 46);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: orangered;
+    border-radius: 50%;
+    width: 8px;
+    
+} */

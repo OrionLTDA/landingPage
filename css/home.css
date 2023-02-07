@@ -1,13 +1,9 @@
 #home{
     height: 100%;
-
     background-image: url("../images/estrelas.png");
 }
 
 #astronauta{
-
-    /* width: 12%; */
-    /* height: 50%; */
     width: 180px;
     height: 350px;
     background-image: url("../images/astronauta.png");
@@ -28,12 +24,14 @@
     gap: 5px;
     
     position: absolute;
-    top: 30%;
+    top: 30%;           
+   
 }
 
 #orion > #orionTitle{
     font-size: 60px;
     letter-spacing: 5px;
+    
 }
 
 #sun{

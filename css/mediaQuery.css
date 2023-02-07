@@ -1,7 +1,5 @@
 @media only screen and (max-width: 1200px) {
 
-
-
     /* CONTATO */
     #fotoEquipe{
         width: 100%;
@@ -19,7 +17,6 @@
     /* SERVIÇOS */
     .cardServicos{
         width: 350px;
-        background-color: brown;
     }
 
     /* VIRTUALIZAÇÂO */
@@ -54,16 +51,78 @@
     .card{
         width: 450px;
         text-align: center;
+        cursor: pointer;
     }
 
+    .card > h3::before {
+        content: "";
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 7px solid white;
+        position: relative;
+        top: 15px;
+        left: -10px;
+    }
+
+    .card > h3::after {
+        content: "";
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 7px solid white;
+        position: relative;
+        top: 15px;
+        right: -10px;
+    }
+
+
+
+    .card > p{
+        display: none;
+    }
+
+    /* GESTAO */
+    
+    #gestaoText {
+        text-align: center;
+    }
+
+    #gestaoText > .text > h3{
+        width: 100%;
+    }
+
+    #gestaoText > .text > ul > li{
+        list-style: none;
+    }
+
+
+
     /* VIRTUALIZAÇÂO */
+    #virtualizacao{
+        text-align: center;
+    }
+
     .virtualizacaoUL > ul{
         width: 100%;
     }
-        /* SLIDER */
-        :root{
-            --sliderSize: 600px;
-        }
+
+    .virtualizacaoUL > ul > li{
+        list-style: none;
+    }
+
+    /* SUPORTE */
+    #suporte{
+        text-align: center;
+    }
+
+    #suporte > ul > li{
+        list-style: none;
+    }
+
+
+    /* SLIDER */
+    :root{
+        --sliderSize: 600px;
+    }
 
     /* SERVIÇOS */
     .cardServicos{
@@ -78,6 +137,13 @@
         justify-content: center;
         gap: 50px;
         text-align: center;
+    }
+
+    /* FOOTER */
+ 
+    #footer > p{
+        font-size: 10px;
+        width: 100%;
     }
 }
 
@@ -108,13 +174,29 @@
 @media only screen and (max-width: 600px) {
     /* DEFAULT */
     .defaultSection{
-        padding: 20px;
+        padding: 20px 5px;
     }
 
     .divisor{
         padding: 20px;
         font-size: 30px;
     }
+
+
+    /* GESTAO */
+    #gestaoText > .text{
+        width: 100%;
+    }
+
+    #gestaoText > .text > h3{
+        width: 100%;
+        padding: 10px;
+    }
+
+    #suporte > ul{
+        width: 100%;    
+    }
+    
 
     /* SLIDER */
     :root{
@@ -144,10 +226,65 @@
 }
 
 
+@media only screen and (max-width: 400px) {
+    /* DEFAULT */
+    .divisor{
+        padding: 20px 10px;
+        font-size: 25px;
+    }
+    
+    /* SLIDER */
+    :root{
+        --sliderSize: 300px;
+    }
+
+    /* VIRTUALIZAÇÂO */
+    .virtualizacaoIMG > img{
+        width: 100px;
+        height: 100px;
+    
+    }
+
+    /* CLIENTES */
+    .clientesIcon{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+
+
+
+
+
+
 
 /* ====================================== */
 /* HEIGHT */
 /* ====================================== */
+@media only screen and (max-height: 1400px) and (min-height: 700px) {
+
+    /* HOME */
+    #home{
+        height: 700px;
+    }
+
+    #orion{
+        top: 100px;
+    }
+
+    #astronauta{
+        top: 300px;
+    }
+
+    #sun{
+        position: relative;
+        bottom: -400px;
+    }
+
+}
+
 
 @media only screen and (max-height: 700px) {
 

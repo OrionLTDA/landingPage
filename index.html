@@ -207,10 +207,10 @@
   </div>
 
   <section id="clientes" class="flex index background defaultSection">
-    <div id="lindimais" class="clientesIcon"></div>
-    <div id="fastmedic" class="clientesIcon"></div>
-    <div id="ufma" class="clientesIcon"></div>
-    <div id="brall" class="clientesIcon"></div>
+    <a id="lindimais" class="clientesIcon" href="https://www.lindimais.com.br/"></a>
+    <a id="fastmedic" class="clientesIcon" href="https://www.fastmedic.com.br/"></a>
+    <a id="ufma" class="clientesIcon" href="https://portalpadrao.ufma.br/"></a>
+    <a id="brall" class="clientesIcon"></a>
   </section>
 
   <div class="divisor flex index">
@@ -263,17 +263,23 @@
     <ion-icon name="arrow-up-outline"></ion-icon>
   </a>
 
-
+  <!-- SLIDER CONTROLLER -->
   <script>
     let radio1 = $("#radio1");
     let radio2 = $("#radio2");
     let radio3 = $("#radio3");
     let radioButton = $(".manual-btn");
+
+    let timeout = 2000
     radio1.checked = true 
+
+
     
     radioButton.on("click", () => {
-      changeRadioSelected()
+     
     })
+
+    
 
     function changeRadioSelected(){
       if(radio1.checked){
@@ -287,8 +293,38 @@
       }
     }
 
-   
+
   </script>
+
+  <!-- CARD QUEM SOMOS CONTROLLER -->
+  <script>
+    var screenWidth = screen.width;
+    var screenHeight = screen.height;
+    console.log(screenWidth)
+
+    if ( screenWidth <= 900){
+      
+      let surgimento = $("#surgimento ");
+      let missao = $("#missao");
+      let principios = $("#principios");
+
+      surgimento.on("click", () => {
+        $("#surgimento p").toggle()
+      })
+
+      missao.on("click", () => {
+        $("#missao p").toggle()
+      })
+
+      principios.on("click", () => {
+        $("#principios p").toggle()
+      })
+
+    }
+    
+
+  </script>
+
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
