@@ -20,6 +20,9 @@
   <link rel="stylesheet" type="text/css" href="./css/footer.css">
   <link rel="stylesheet" type="text/css" href="./css/mediaQuery.css">
 
+  <!-- SWIPER CSS -->
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
@@ -121,15 +124,24 @@
     <div class="virtualizacaoIMG flex"> 
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
+      <img src="/images/poewrbi.png" />
+      <img src="/images/powerapp.png" />
     </div>
 
     <div class="virtualizacaoUL flex">
       <ul>
-        <li>Tem dificuldade em organizar toda a papelada da empresa para os diferentes setores?</li>
-        <li>Se alguém perder um recibo ou uma nota fiscal, há uma confusão no financeiro?</li>
+        <li>
+            Tem dificuldade em organizar toda a papelada da empresa para os diferentes setores?
+        </li>
+
+        <li>
+          Se alguém perder um recibo ou uma nota fiscal, há uma confusão no financeiro?
+        </li>
+
         <li>
           Você precisa da Virtualização de Processos Orion! Uma consultoria especializada em adequar a rotina de trabalho dos nossos clientes para o seu computador! Com nossa equipe de experts, adequamos a sua forma de trabalhar para o seus aparelhos (computador, celular ou tablet).
         </li>
+
         <li>
           Podemos montar aplicativos, gráficos inteligentes, sites, tudo isso dentro da sua realidade! Assim, pequenos problemas de perca de recursos irão sumir da sua corporação.
         </li>
@@ -138,12 +150,12 @@
 
     <div class="slider flex">
       
-      <div class="slides flex" >                   
+      <div class="slides flex">                   
         <input type="radio" name="radio-bnt" id="radio1">
         <input type="radio" name="radio-bnt" id="radio2">
         <input type="radio" name="radio-bnt" id="radio3">
 
-        <div class="slide first">
+        <div class="slide first ">
             <img src="/images/Frame 31.png" alt="Imagem1">
         </div>
         <div class="slide">
@@ -264,67 +276,12 @@
   </a>
 
   <!-- SLIDER CONTROLLER -->
-  <script>
-    let radio1 = $("#radio1");
-    let radio2 = $("#radio2");
-    let radio3 = $("#radio3");
-    let radioButton = $(".manual-btn");
-
-    let timeout = 2000
-    radio1.checked = true 
-
-
-    
-    radioButton.on("click", () => {
-     
-    })
-
-    
-
-    function changeRadioSelected(){
-      if(radio1.checked){
-        radio2.checked = true;  
-      }else if(radio2.checked){
-          radio3.checked = true;
-      }else if(radio3.checked){
-          radio4.checked = true;  
-      }else if(radio4.checked){
-          radio1.checked = true; 
-      }
-    }
-
-
-  </script>
+  <script src="./js/sliderController.js"></script>
 
   <!-- CARD QUEM SOMOS CONTROLLER -->
-  <script>
-    var screenWidth = screen.width;
-    var screenHeight = screen.height;
-    console.log(screenWidth)
+  <script src="./js/cardsController.js"></script>
 
-    if ( screenWidth <= 900){
-      
-      let surgimento = $("#surgimento ");
-      let missao = $("#missao");
-      let principios = $("#principios");
-
-      surgimento.on("click", () => {
-        $("#surgimento p").toggle()
-      })
-
-      missao.on("click", () => {
-        $("#missao p").toggle()
-      })
-
-      principios.on("click", () => {
-        $("#principios p").toggle()
-      })
-
-    }
-    
-
-  </script>
-
+  <!-- ION-ICONS -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
