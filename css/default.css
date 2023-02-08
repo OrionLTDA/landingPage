@@ -46,8 +46,6 @@ body, html{
     padding: 30px;
     background-color: var(--themeColor);
 
-   
-    
     text-align: center;
 
     position: relative;
@@ -116,34 +114,6 @@ body, html{
     background-color: white;
     border-radius: 20px;
 }
-
-
-/* SETINHAS DROP DOWN */
-.setinha::before {
-    content: "";
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 7px solid white;
-    position: relative;
-    top: 15px;
-    left: -10px;
-}
-
-.setinha::after {
-    content: "";
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 7px solid white;
-    position: relative;
-    top: 15px;
-    right: -10px;
-}
-
-
-
-
-
-
 
 
 /* ESTRELA TESTE */

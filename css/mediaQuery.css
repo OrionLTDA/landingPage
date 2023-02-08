@@ -51,7 +51,6 @@
     .card{
         width: 450px;
         height: auto;
-        text-align: center;
         cursor: pointer;
     }
 
@@ -63,6 +62,7 @@
         position: relative;
         top: 15px;
         left: -10px;
+        animation: gobackCard 2s ease-in-out infinite;
     }
 
     .card > h3::after {
@@ -73,10 +73,26 @@
         position: relative;
         top: 15px;
         right: -10px;
+        animation: gobackCard 2s ease-in-out infinite;
     }
+
+    @keyframes gobackCard {
+        0% {
+            top: 15px;
+        }
+        50% {
+            top: 20px;
+        }
+        100%{
+            top: 15px;
+        }
+    }
+
+    
 
     .card > p{
         display: none;
+        text-align: center;
     }
 
     .card > ul{
@@ -111,10 +127,21 @@
         border-top: var(--size) solid #a4c2f4;
         position: relative;
         bottom: 10px;
-        right: 0;
 
-        /* FAZER ANIMAÇÂO */
-    }      
+        animation: goback 2s ease-in-out infinite;
+    }    
+    
+    @keyframes goback {
+        0% {
+            bottom: 10px;
+        }
+        50% {
+            bottom: 15px;
+        }
+        100%{
+            bottom: 10px;
+        }
+    }
 
     #gestaoText > .text > ul{
         display: none;
@@ -175,6 +202,8 @@
         font-size: 10px;
         width: 100%;
     }
+
+    
 }
 
 
@@ -259,13 +288,18 @@
 @media only screen and (max-width: 400px) {
     /* DEFAULT */
     .divisor{
-        padding: 20px 10px;
+        padding: 15px 10px;
         font-size: 25px;
+    }
+
+    /* HOME */
+    #sun{
+        --sunDiameter: 250px;
     }
     
     /* SLIDER */
     :root{
-        --sliderSize: 300px;
+        --sliderSize: 250px;
     }
 
     /* VIRTUALIZAÇÂO */
@@ -282,7 +316,17 @@
     }
 }
 
+@media only screen and (max-width: 340px) {
+    #orion > #orionTitle{
+        font-size: 30px;
+    }
 
+    
+
+    #contatoDiv > iframe{
+        width: 200px;
+    }
+}
 
 
 
