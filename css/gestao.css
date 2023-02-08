@@ -6,14 +6,21 @@
     gap: 30px;
 }
 
-#gestaoText > .text > h3{
+#gestaoText > .text > div h3{
     text-align: center;
     padding: 30px;
-    font-size: 30px;
-    color: lightblue;
+
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-variant: normal;
+    font-weight: normal;
+    
+    color: #a4c2f4;
+    font-family: 'Audiowide', 'Arial';
 }
 
 #gestaoText > .text > ul > li{
+    font-family: 'Exo', 'Arial';
     margin: 20px;
 }
 

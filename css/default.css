@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Exo&family=Audiowide&display=swap');
+
 :root{
     --themeColor: rgba(11, 11, 85, .8);
     --fontSize: 18px;
@@ -7,8 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: "Exo", Arial; */
-    font-family: 'Orbitron', Arial;
+    font-family: "Exo", Arial;
     font-size: var(--fontSize);
 }
 
@@ -45,13 +46,21 @@ body, html{
     padding: 30px;
     background-color: var(--themeColor);
 
-    font-size: 3em;
-    font-weight: bold;
-    text-transform: uppercase;
+   
+    
     text-align: center;
 
     position: relative;
     z-index: 2;
+}
+
+.divisor > p{
+    font-family: 'Orbitron', 'Arial' !important;
+    font-size: 24px;
+    font-weight: normal;
+    vertical-align: baseline;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .defaultSection{
@@ -107,6 +116,34 @@ body, html{
     background-color: white;
     border-radius: 20px;
 }
+
+
+/* SETINHAS DROP DOWN */
+.setinha::before {
+    content: "";
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid white;
+    position: relative;
+    top: 15px;
+    left: -10px;
+}
+
+.setinha::after {
+    content: "";
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid white;
+    position: relative;
+    top: 15px;
+    right: -10px;
+}
+
+
+
+
+
+
 
 
 /* ESTRELA TESTE */

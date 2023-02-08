@@ -7,16 +7,26 @@ if ( screenWidth <= 900){
     const missao = $("#missao");
     const principios = $("#principios");
 
+    const gestao = $(".text div");
+
     surgimento.on("click", () => {
-    $("#surgimento p").toggle()
+        $("#surgimento p").toggle()
     })
 
     missao.on("click", () => {
-    $("#missao p").toggle()
+        $("#missao p").toggle()
     })
 
     principios.on("click", () => {
-    $("#principios p").toggle()
+        $("#principios ul").toggle()
     })
+
+
+    gestao.on("click", () => {
+        $(".text ul").toggle()
+    })
+
+
+
 
 }
