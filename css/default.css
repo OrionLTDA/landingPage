@@ -108,15 +108,29 @@ body, html{
     border-radius: 20px;
 }
 
-::-webkit-scrollbar-thumb::after {
-    content: "";
-    display: block;
-    position: relative;
-    top: 0;
-    left: 0;
-    z-index: 5;
+
+/* ESTRELA TESTE */
+.star{
+    --starDiameter: 3px;
+
+    width: var(--starDiameter);
+    height: var(--starDiameter);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    background-color: azure;
+
+    box-shadow:
+        0 0 5px 1px white,
+        0 0 8px 1px rgb(146, 162, 235),
+        0 0 10px 1px rgb(75, 255, 255);
 
     border-radius: 50%;
-    background: orangered;
-    width: 2px;
 }
+
