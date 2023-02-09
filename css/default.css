@@ -3,6 +3,7 @@
 :root{
     --themeColor: rgba(11, 11, 85, .8);
     --fontSize: 18px;
+    scroll-behavior: smooth;
 }
 
 *{
@@ -35,11 +36,12 @@ body, html{
 }
 
 .background{
-    background-image: url("../images/estrelas.png");
+    /* background-image: url("../images/estrelas.png"); */
     /* background-size: 100% 100%; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background: rgba(0, 0, 0, .6)
 }
 
 .divisor{
@@ -100,10 +102,6 @@ body, html{
 
 ::-webkit-scrollbar {
     width: 8px;
-    /* display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center; */
 }
   
 ::-webkit-scrollbar-track {
@@ -118,26 +116,16 @@ body, html{
 
 /* ESTRELA TESTE */
 .star{
-    --starDiameter: 3px;
-
-    width: var(--starDiameter);
-    height: var(--starDiameter);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     position: fixed;
-    top: 20px;
-    left: 20px;
+   
+    z-index: 1;
 
     background-color: azure;
 
     box-shadow:
-        0 0 5px 1px white,
-        0 0 8px 1px rgb(146, 162, 235),
-        0 0 10px 1px rgb(75, 255, 255);
+        0 0 2px 1px white,
+        0 0 5px 1px rgb(146, 162, 235),
+        0 0 8px 1px rgb(75, 255, 255);
 
     border-radius: 50%;
 }
-
