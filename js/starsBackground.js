@@ -27,3 +27,9 @@ for (let i = 0; i < nStars; i++) {
 
     body.append(star)
 }
+
+let milkway = $("<div>",{
+    class: "milkway"
+}) 
+
+body.append(milkway)
