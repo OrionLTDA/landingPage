@@ -3,7 +3,7 @@ const body = $("body");
 let windowWidths = window.innerWidth;
 let windowHeights = window.innerHeight;
 
-console.log(`W: ${windowWidths} H: ${windowHeights}`);
+// console.log(`W: ${windowWidths} H: ${windowHeights}`);
 let min = 10;
 let max = 15;
 let nStars = Math.floor(Math.random() * (max - min + 1)) + min;
