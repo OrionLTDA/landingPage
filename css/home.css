@@ -13,10 +13,22 @@
     position: absolute;
     bottom: 0;
     z-index: 2;
+    animation: astronauta 3s ease-in-out infinite;
+}    
+    
+@keyframes astronauta {
+    0% {
+        bottom: 10px;
+    }
+    50% {
+        bottom: 15px;
+    }
+    100%{
+        bottom: 10px;
+    }
 }
 
 #orion{
-
     padding: 5px;
 
     flex-flow: row;

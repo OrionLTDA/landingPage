@@ -10,11 +10,10 @@
   <link rel="stylesheet" type="text/css" href="./css/default.css">
   <link rel="stylesheet" type="text/css" href="./css/home.css">
   <link rel="stylesheet" type="text/css" href="./css/quemSomos.css">
-  <link rel="stylesheet" type="text/css" href="./css/gestao.css">
-  <link rel="stylesheet" type="text/css" href="./css/virtualizacao.css">
-  <link rel="stylesheet" type="text/css" href="./css/sliders.css">
-  <link rel="stylesheet" type="text/css" href="./css/suporte.css">
-  <link rel="stylesheet" type="text/css" href="./css/outrosServicos.css">
+
+  <link rel="stylesheet" type="text/css" href="./css/nossosServicos.css">
+  <link rel="stylesheet" type="text/css" href="./css/showCards.css">
+
   <link rel="stylesheet" type="text/css" href="./css/clientes.css">
   <link rel="stylesheet" type="text/css" href="./css/contato.css">
   <link rel="stylesheet" type="text/css" href="./css/footer.css">
@@ -25,9 +24,7 @@
 </head>
 
 <body>
-  <header id="header">
 
-  </header>
 
   <section id="home"class="flex background defaultSection">
     <div id="astronauta"></div>
@@ -44,6 +41,7 @@
     <div id="sun"></div>
   </section>
 
+  <!-- QUEM SOMOS -->
   <div class="divisor flex index">
     <p>Quem somos</p>
   </div>
@@ -77,149 +75,125 @@
     </div>
   </section>
 
+  <!-- NOSSOS SERVICOS -->
   <div class="divisor flex index">
-    <p>Gestão empresarial</p>
+    <p>Nossos serviços</p>
   </div>
+  
+  <section id="nossosServicos"class="flex index background defaultSection">
 
-  <section id="gestaoText" class="flex index background defaultSection">
-    <div class="text">
+    <div id="titleNossosServicos">
+      <h3>
+        Gerir o seu negócio de forma que reduza a possibilidade de falhas, .... e desperdícios. Com nossa equipe
+      </h3>
+    </div>
 
-      <div>
-        <h3>
-          Por que sua empresa deveria investir em um sistema de gestão empresarial? 
-        </h3>
+    <div id="cardServicos" class="flex">
+
+      <div class="cardS flex">
+        <div class="cardContent flex">
+
+          <div id="softApp" class="cardIMG"></div>
+  
+          <div class="cardTXT flex">
+            <h3 class="cardTitle">Desenvolvimento de Software e Apps</h3>
+            <p>
+              Temos equipe para fazer o seu software
+            </p>
+          </div>
+
+        </div>
+
+        <div class="cardBtn flex">
+          <button class="cBtn flex">
+            <p>Saiba Mais</p>
+            <ion-icon name="caret-forward-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+
+      <div class="cardS flex">
+        <div class="cardContent flex">
+          <div id="RPA" class="cardIMG"></div>
+  
+          <div class="cardTXT flex">
+
+            <h3 class="cardTitle">Virtualização de processos (RPA)</h3>
+            <p>
+              Temos equipe para fazer o seu software
+            </p>
+
+          </div>
+        </div>
+
+        <div class="cardBtn flex">
+          <button class="cBtn flex">
+            <p>Saiba Mais</p>
+            <ion-icon name="caret-forward-outline"></ion-icon>
+          </button>
+        </div>
       </div>
       
-
-      <ul>
-        <li>
-          O principal objetivo é gerir o seu negócio de forma totalmente automatizada e holística. A implantação de um
-          sistema de gestão reduz drasticamente a possibilidade de falhas e fraudes e evita problemas com o fisco, pois
-          permite uma análise abrangente dos dados em todos os setores da empresa.
-        </li>
-        <li>
-          Permite o desenvolvimento mais rápido de requisitos e captura dados precisos que suportam maior
-          produtividade;
-        </li>
-        <li>
-          Por meio das informações produzidas pelo sistema, haverá informações estratégicas que poderão ser utilizadas para tomar decisões importantes sobre os rumos da empresa; 
-        </li>
-        <li>
-          O software é desenvolvido para atender todas as necessidades da empresa. A plataforma conecta vários setores, como finanças, marketing, relacionamento com clientes e gerenciamento de estoque;  
-        </li>
-        <li>
-          Configurar seu sistema pode ajudar muito a garantir que sua empresa sempre tenha um serviço relevante e consistente. Essas opções são oferecidas pelos melhores sistemas do mercado;  
-        </li>
-
-      </ul>
-
-    </div>
-
-  </section>
-
-  <div class="divisor flex index">
-    <p>Virtualização de processos</p>
-  </div>
-
-  <section id="virtualizacao" class="flex index background defaultSection">
-
-    <div class="virtualizacaoIMG flex"> 
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" />
-      <img src="./images/express.png" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" />
-      <img src="./images/poewrbi.png" />
-      <img src="./images/powerapp.png" />
-    </div>
-
-    <div class="virtualizacaoUL flex">
-      <ul>
-        <li>
-            Tem dificuldade em organizar toda a papelada da empresa para os diferentes setores?
-        </li>
-
-        <li>
-          Se alguém perder um recibo ou uma nota fiscal, há uma confusão no financeiro?
-        </li>
-
-        <li>
-          Você precisa da Virtualização de Processos Orion! Uma consultoria especializada em adequar a rotina de trabalho dos nossos clientes para o seu computador! Com nossa equipe de experts, adequamos a sua forma de trabalhar para o seus aparelhos (computador, celular ou tablet).
-        </li>
-
-        <li>
-          Podemos montar aplicativos, gráficos inteligentes, sites, tudo isso dentro da sua realidade! Assim, pequenos problemas de perca de recursos irão sumir da sua corporação.
-        </li>
-      </ul>
-    </div>
-
-    <div class="slider flex">
-      
-      <div class="slides flex">                   
-        <input type="radio" name="radio-bnt" id="radio1">
-        <input type="radio" name="radio-bnt" id="radio2">
-        <input type="radio" name="radio-bnt" id="radio3">
-
-        <div class="slide first ">
-            <img src="./images/Frame 31.png" alt="Imagem1">
+      <div class="cardS flex">
+        <div class="cardContent flex">
+          <div id="business" class="cardIMG"></div>
+  
+          <div class="cardTXT flex">
+            <h3 class="cardTitle">Business Inteligence</h3>
+            <p>
+              Temos equipe para criar gráficos para sua gestão
+            </p>
+          </div>
         </div>
-        <div class="slide">
-            <img src="./images/Frame 32.png" alt="Imagem2">
-        </div>
-        <div class="slide">
-            <img src="./images/Frame 33.png" alt="Imagem3">
+
+        <div class="cardBtn flex">
+          <button class="cBtn flex">
+            <p>Saiba Mais</p>
+            <ion-icon name="caret-forward-outline"></ion-icon>
+          </button>
         </div>
       </div>
 
-      <div class="manual-navigation flex">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
+      <div class="cardS flex">
+        <div class="cardContent flex">
+          <div id="sites" class="cardIMG"></div>
+  
+          <div class="cardTXT flex">
+            <h3 class="cardTitle">Desenvolvimento de sites</h3>
+          </div>
+        </div>
+
+        <div class="cardBtn flex">
+          <button class="cBtn flex">
+            <p>Saiba Mais</p>
+            <ion-icon name="caret-forward-outline"></ion-icon>
+          </button>
+        </div>
       </div>
-  </div>
-  </section>
 
-  <div class="divisor flex index">
-    <p>Suporte de T.I</p>
-  </div>
+      <div class="cardS flex">
+        <div class="cardContent flex">
 
-  <section id="suporte" class="flex index background defaultSection">
-    <ul>
-      <li>Hoje tudo está conectado! Desde o setor fiscal até o almoxarifado. Cada dia mais usamos mais Apps que facilitam nossa vida e aproximam as pessoas.</li>
-      <li>Por isso você DEVE ter uma equipe de T.I. para garantir o bom funcionamento, o "carinha do computador" é um personagem essencial na sua empresa.</li>
-      <li>A Orion oferece uma equipe pronta sob demanda para atender.</li>
-    </ul>
-  </section>
+          <div id="marketing" class="cardIMG"></div>
+  
+          <div class="cardTXT flex">
+            <h3 class="cardTitle">Marketing digital</h3>
+          </div>
+        </div>
 
-  <div class="divisor flex index">
-    <p>Outros serviços</p>
-  </div>
-
-  <section id="outrosServicos" class="flex index background defaultSection">
-
-    <div class="cardServicos flex">
-      <div id="atomos" class="servicosIMG flex"></div>
-
-      <h3>Desenvolvimento de Software</h3>
-
-
-      <div class="textServicos">
-        Está cansado de ter que adequar sua produção à sistemas inflexíveis e nada convencionais? Nós da Orion possibilitamos aos nossos clientes toda a excelência de nossa fábrica de softwares.
-      </div>
+        <div class="cardBtn flex">
+          <button class="cBtn flex">
+            <p>Saiba Mais</p>
+            <ion-icon name="caret-forward-outline"></ion-icon>
+          </button>
+        </div>
     </div>
 
-    <div class="cardServicos flex">
-      <div id="prontuario" class="servicosIMG flex"></div>
-
-      <h3>Prontuário Eletrônico</h3>
-
-      <div class="textServicos">
-        A Orion Saúde é uma solução que utiliza o que há de mais avançado no mercado para entregar um fluxo de trabalho nos moldes do ministério da saúde, que consiga ser tanto prático quanto eficaz na gestão da atenção primária, secundária e terciária, assim como acompanhar o constante avanço das deliberações do ministério da saúde.
-      </div>
-    </div>
   </section>
-
+  
+  <!-- CLIENTES -->
   <div class="divisor flex index">
-    <p>clientes</p>
+    <p>Clientes</p>
   </div>
 
   <section id="clientes" class="flex index background defaultSection">
@@ -249,7 +223,7 @@
           <p>(85) 3219-8874</p>
         </div>
 
-        <div class="redesSociais">
+        <div class="redesSociais flex">
 
           <p>Redes Sociais:</p>
           <div class="socialsLogos flex">
@@ -268,10 +242,6 @@
       </div>
     </div>
 
-    <div id="fotoEquipe">
-      <div id="equipe"></div>
-    </div>
-
   </section>
 
   <footer id="footer" class="divisor flex">
@@ -285,15 +255,82 @@
     <ion-icon name="arrow-up-outline"></ion-icon>
   </a>
 
-  <!-- SLIDER CONTROLLER -->
-  <script src="./js/sliderController.js"></script>
+  <div id="cardShow" class="flex displayNone">
+
+    <div id="cardPanel" class=" flex displayNone">
+      <div id="cardShowContent" class="flex ">
+        <h3 id="cardShowTitle"></h3>
+        <p id="cardShowText"></p>
+  
+        <button id="cardShowBtn">
+          <p id="cardShowBtnText"></p>
+          <ion-icon name='mail-outline'></ion-icon>
+          <a href="mailto:comercial@orionsolucoes.com.br"></a>
+        </button>
+      </div>
+    </div>
+    
+    <div id="emailPanel" class="flex displayNone">
+      <div id="emailContent" class="flex">
+        <!-- comercial@orionsolucoes.com.br -->
+        <form action="mailto:gldhperes@gmail.com" method="POST" enctype="text/plain" class="flex">
+          <p>Seu Nome:</p>
+          <input name="nome" type="text" required />
+          <p>E-Mail:</p>
+          <input type="email" name="email" required />
+          <p>Mensagem:</p>
+          <textarea name="mensagem"  required></textarea>
+
+          <button id="subitEmail" type="submit" value="Enviar">Enviar</button>
+        </form>
+      </div>
+    </div>
+  
+    <div id="cardShowClose">
+      <ion-icon name="close-circle-outline"></ion-icon>
+    </div>
+    
+  </div>
+  
 
   <!-- CARD QUEM SOMOS CONTROLLER -->
   <script src="./js/cardsController.js"></script>
 
 
-   <!-- STARS CONTROLLER -->
-   <script src="./js/starsBackground.js"></script>
+  <!-- STARS CONTROLLER -->
+  <script src="./js/starsBackground.js"></script>
+
+  <!-- SAIBA MAIS CARDS CONTROLLER -->
+  <script src="./js/saibaMaisCardControl.js"></script>
+
+  <!-- SAIBA MAIS CARDS -->
+  <script type="module">
+    import{ openCard } from "./js/saibaMaisCard.js"
+
+    let card = $(".cardS")
+
+    const background = $("#cardShow");
+    const cardPanel = $("#cardShowContent");
+
+    const cardShowBtn = $("#cardShowBtn");
+
+    card.click(function() {
+      showCard()
+      const content = $(this).find('.cardContent .cardTitle').text();
+      openCard ( content )
+    });
+
+    cardShowBtn.click(function() {
+      showEmail()
+    })
+
+    $("#subitEmail").click( function(e){  
+      close()
+    });
+
+  </script>
+
+  
 
   <!-- ION-ICONS -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

@@ -1,0 +1,109 @@
+#nossosServicos{
+    flex-flow: column;
+    gap: 50px;
+}
+
+
+#titleNossosServicos{
+    text-align: center;
+}
+
+
+#cardServicos{
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.cardS{
+    width: 500px;
+    min-height: 300px;
+    padding: 20px;
+
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    /* background-color: crimson; */
+
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.cardS:hover{
+    background: rgba(255, 255, 255, 0.1);
+    width: 520px;
+    /* color: black; */
+}
+
+.cardContent{
+    width: 100%;
+    flex-flow: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+
+
+.cardTitle{
+    font-size: 20px;
+}
+
+
+.cardIMG{
+    --cardIMG: 100px;
+    width: var(--cardIMG);
+    height: var(--cardIMG);
+
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    border-radius: 50%;
+    background-color: azure;
+}
+
+
+.cardTXT{
+    flex-flow: column wrap;
+    gap: 5px;
+    text-align: center;
+}
+
+
+.cardBtn{
+    width: 100%;
+}
+
+.cBtn{
+    padding: 15px;
+    /* background-color: none; */
+    cursor: pointer;
+    text-align: center;
+
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+
+
+/* IMAGES */
+#softApp{
+    background-image: url("../images/softApp.png");
+}
+
+#RPA{
+    background-image: url("../images/rpa.png");
+}
+
+#business{
+    background-image: url("../images/Frame\ 31.png");
+}
+
+#sites{
+    background-image: url("../images/sites.png");
+}
+
+#marketing{
+    background-image: url("../images/marketing.png");
+}

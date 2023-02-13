@@ -66,6 +66,14 @@ body, html{
     padding: 50px;
 }
 
+.displayNone{
+    display: none;
+}
+
+.displayBlock{
+    display: flex;
+}
+
 /* HOME BUTTON */
 #homeButton{
     --diameter: 40px;
@@ -145,4 +153,4 @@ body, html{
     );
     overflow: hidden;
     z-index: 0;
-  }
+}

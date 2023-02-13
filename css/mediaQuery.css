@@ -1,48 +1,22 @@
-@media only screen and (max-width: 1200px) {
-
-    /* CONTATO */
-    #fotoEquipe{
-        width: 100%;
-        height: 300px;
-    }
-}
-
 @media only screen and (max-width: 1000px) {
+
+
+    /* NOSSOS SERVICOS */
+    
 
     /* GESTAO */
     #gestaoText > .text{
         width: 100%;
     }
 
-    /* SERVIÇOS */
-    .cardServicos{
-        width: 350px;
-    }
+    /* NOSSOS SERVIÇOS */
+    
 
     /* VIRTUALIZAÇÂO */
     .virtualizacaoUL{
         padding: 0;
     }
 
-    .cardServicos > .servicosIMG{
-        width: 200px;
-        height: 200px;
-    }
-
-    .cardServicos > .textServicos{
-        width: 100%;
-        
-    }
-
-
-    /* CONTATO */
-    #fotoEquipe{
-        height: 200px;
-    }
-
-    #equipe{
-        bottom: -80px;
-    }
 }
 
 
@@ -181,11 +155,8 @@
         --sliderSize: 600px;
     }
 
-    /* SERVIÇOS */
-    .cardServicos{
-        width: 80%;
-        text-align: center;
-    }
+    /* NOSSOS SERVIÇOS */
+    
 
     /* CONTATO */
     .contatos{
@@ -220,14 +191,12 @@
         --sliderSize: 500px;
     }
 
-    /* CONTATO */
-    #fotoEquipe{
-        height: 150px;
+    #emailContent > form > textarea,
+    #emailContent > form > input,
+    #emailContent > form > p{
+        width: 100%;
     }
 
-    #equipe{
-        bottom: -50px;
-    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -240,6 +209,13 @@
         padding: 20px;
         font-size: 30px;
     }
+
+    /* NOSSOS SERVICOS */
+    .cardS{
+        width: 80%;
+    }
+
+
 
 
     /* GESTAO */

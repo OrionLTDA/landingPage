@@ -2,8 +2,6 @@
     flex-flow: column;
     
     gap: 100px;
-
-    padding-bottom: 0;
 }
 
 #contatoDiv{
@@ -22,7 +20,10 @@
 
     /* background-color: aqua; */
 }
-
+.redesSociais{
+    flex-flow: column;
+    gap: 10px;
+}
 
 
 .socialsLogos{
@@ -41,28 +42,4 @@
     height: 40px;
 
     cursor: pointer;
-}
-
-#fotoEquipe{
-    width: 90%;
-    height: 400px;
-
-    padding-bottom: 0;
-
-    overflow: hidden;
-}
-
-#equipe{
-    width: 100%;
-    height: 100%;
-
-    background-image: url("../images/equipe.png");
-    background-size: 100% 100%;
-    /* background-size: cover; */
-    background-position: center;
-    background-repeat: no-repeat;
-
-    position: relative;
-    bottom: -100px;
-    /* left: 50%; */
 }

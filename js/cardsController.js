@@ -2,8 +2,8 @@ const screenWidth = screen.width;
 const windowWidth = window.innerWidth;
 const windowHeight = window.innerHeight;
 
-console.log("S: " + screenWidth + " W: " + windowWidth)
-console.log("H: " + windowHeight)
+// console.log("S: " + screenWidth + " W: " + windowWidth)
+// console.log("H: " + windowHeight)
 
 if ( screenWidth <= 900 || windowWidth <= 900){
     

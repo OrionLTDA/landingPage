@@ -1,0 +1,100 @@
+/* SHOWCARD */
+#cardShow{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    
+    align-items: flex-start;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    background: rgba(10, 10, 10, .8);  
+}
+
+#cardShowContent{
+    width: 90%;
+    padding: 40px 20px;
+
+    gap: 60px;
+    background:rgba(10, 10, 10, .9);
+
+
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+#cardShowBtn{
+    padding: 20px 30px;
+    gap: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#cardShowBtn > ion-icon{
+    font-size: 25px;
+}
+
+#cardShowClose{
+    padding: 5px;
+
+    position: absolute;
+    top: 5px;
+    right: 5px;
+ 
+    color: red;
+    text-align: center;
+    cursor: pointer;
+}
+
+#cardShowClose ion-icon{
+    --diam: 30px;
+    width: var(--diam);
+    height: var(--diam);
+}
+
+
+/* EMAIL */
+#emailPanel{
+    width: 90%;
+    padding: 40px 20px;
+
+    gap: 60px;
+    background:rgba(10, 10, 10, .9);
+
+
+    border: 1px solid white;
+    border-radius: 20px;
+}
+#emailContent {
+    width: 100%;
+}
+
+#emailContent > form{
+    width: 100%;
+    flex-flow: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+#emailContent > form > textarea,
+#emailContent > form > input,
+#emailContent > form > p{
+    width: 80%;
+}
+    
+#emailContent > form > textarea{
+    resize: none;
+    min-height: 100px;
+}
+
+#subitEmail{
+
+    padding: 15px 20px;
+
+    border: 1px solid black;
+    border-radius: 20px;
+}
