@@ -2,7 +2,7 @@
 #cardShow{
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 10px;
     
     align-items: flex-start;
     text-align: center;
@@ -16,7 +16,7 @@
 
 #cardShowContent{
     width: 90%;
-    padding: 40px 20px;
+    padding: 20px 10px;
 
     gap: 60px;
     background:rgba(10, 10, 10, .9);

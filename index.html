@@ -280,7 +280,9 @@
           <p>Mensagem:</p>
           <textarea name="mensagem"  required></textarea>
 
-          <button id="subitEmail" type="submit" value="Enviar">Enviar</button>
+          <button id="subitEmail" type="submit" value="Enviar">
+            <a target="_blank">Enviar</a>
+          </button>
         </form>
       </div>
     </div>
@@ -324,6 +326,10 @@
     })
 
     $("#subitEmail").click( function(e){  
+      close()
+    });
+    
+    $("#cardShowClose").click( function(e){  
       close()
     });
 

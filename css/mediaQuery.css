@@ -214,30 +214,17 @@
     .cardS{
         width: 80%;
     }
-
-
-
-
-    /* GESTAO */
-    #gestaoText > .text{
-        width: 100%;
-    }
-
-    #gestaoText > .text > h3{
-        width: 100%;
-        padding: 10px;
-    }
-
-    #suporte > ul{
-        width: 100%;    
-    }
     
 
-    /* SLIDER */
-    :root{
-        --sliderSize: 400px;
+    /* SHOWCARD */
+    #cardShow{
+        padding: 20px 10px;
     }
 
+    #cardShowContent{
+        padding: 10px;
+        gap: 30px;
+    }
 
     /* CLIENTES */
     .clientesIcon{
