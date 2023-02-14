@@ -226,6 +226,10 @@
         gap: 30px;
     }
 
+    #cardShowBtn{
+        padding: 15px;
+    }
+
     /* CLIENTES */
     .clientesIcon{
         width: 200px;
@@ -258,6 +262,11 @@
     /* HOME */
     #sun{
         --sunDiameter: 250px;
+    }
+
+    /* SHOWCARD */
+    #cardShowBtn{
+        padding: 8px;
     }
     
     /* SLIDER */
