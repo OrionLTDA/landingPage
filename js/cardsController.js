@@ -1,36 +1,36 @@
-const screenWidth = screen.width;
-const windowWidth = window.innerWidth;
-const windowHeight = window.innerHeight;
+showCardContent()
 
-// console.log("S: " + screenWidth + " W: " + windowWidth)
-// console.log("H: " + windowHeight)
+$( window ).resize(function() {
+    showCardContent()
+})
 
-if ( screenWidth <= 900 || windowWidth <= 900){
+function showCardContent(){
+    const screenWidth = screen.width;
+    const windowWidth = window.innerWidth;
+    const windowHeight = window.innerHeight;
+
+    if ( screenWidth <= 900 || windowWidth <= 900){
     
-    const surgimento = $("#surgimento ");
-    const missao = $("#missao");
-    const principios = $("#principios");
+        const surgimento = $("#surgimento ");
+        const missao = $("#missao");
+        const principios = $("#principios");
 
-    const gestao = $(".text div");
+        const gestao = $(".text div");
 
-    surgimento.on("click", () => {
-        $("#surgimento p").toggle()
-    })
+        surgimento.on("click", () => {
+            $("#surgimento p").toggle()
+        })
 
-    missao.on("click", () => {
-        $("#missao p").toggle()
-    })
+        missao.on("click", () => {
+            $("#missao p").toggle()
+        })
 
-    principios.on("click", () => {
-        $("#principios ul").toggle()
-    })
+        principios.on("click", () => {
+            $("#principios ul").toggle()
+        })
 
-
-    gestao.on("click", () => {
-        $(".text ul").toggle()
-    })
-
-
-
-
+        gestao.on("click", () => {
+            $(".text ul").toggle()
+        })
+    }
 }

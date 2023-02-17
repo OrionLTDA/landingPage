@@ -28,7 +28,7 @@
         cursor: pointer;
     }
 
-    .card > h3::before {
+    /* .card > h3::before {
         content: "";
         border-left: 7px solid transparent;
         border-right: 7px solid transparent;
@@ -60,18 +60,17 @@
         100%{
             top: 15px;
         }
-    }
+    } */
 
     
-
-    .card > p{
+    /* .card > p{
         display: none;
         text-align: center;
-    }
+    } */
 
-    .card > ul{
+    /* .card > ul{
         display: none;
-    }
+    } */
 
     /* GESTAO */
     
@@ -345,5 +344,9 @@
     /* HOME */
     #orion{
         top: 10%;
+    }
+
+    #astronauta{
+        height: 280px;
     }
 }

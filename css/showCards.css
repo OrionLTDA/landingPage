@@ -4,7 +4,7 @@
     height: 100%;
     padding: 10px;
     
-    align-items: flex-start;
+    align-items: center;
     text-align: center;
     position: fixed;
     top: 0;
@@ -21,14 +21,13 @@
     gap: 60px;
     background:rgba(10, 10, 10, .9);
 
-
     border: 1px solid white;
     border-radius: 20px;
 }
 
 #cardShowBtn{
     padding: 20px 30px;
-    gap: 20px;
+    gap: 10px;
     border: 1px solid white;
     border-radius: 20px;
     cursor: pointer;
@@ -69,6 +68,7 @@
     border: 1px solid white;
     border-radius: 20px;
 }
+
 #emailContent {
     width: 100%;
 }
@@ -92,7 +92,6 @@
 }
 
 #subitEmail{
-
     padding: 15px 20px;
 
     border: 1px solid black;
