@@ -243,6 +243,11 @@
         --sliderSize: 300px;
     }
 
+    /* HOME */
+    #orion{
+        --orionDim: 240px;
+    }
+
     /* CLIENTES */
     .clientesIcon{
         width: 150px;
@@ -344,9 +349,18 @@
     /* HOME */
     #orion{
         top: 10%;
+        --orionDim: 240px;
     }
 
     #astronauta{
         height: 280px;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+
+    #astronauta{
+        width: 150px;
+        height: 200px;
     }
 }
