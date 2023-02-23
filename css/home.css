@@ -29,9 +29,9 @@
 }
 
 #orion{
-    --orionDim: 320px;
+    --orionDim: 400px;
     width: var(--orionDim);
-    height: calc( var(--orionDim) / 4);
+    height: calc( var(--orionDim) / 5);
     padding: 5px;
 
     flex-flow: row;

@@ -1,22 +1,128 @@
 #quemSomos{
-    gap: 30px;
-    font-size: var(--fontSize);
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
 }
 
+#planeta{
+    --planetaDim: 400px;
+    width: var(--planetaDim);
+    height: var(--planetaDim);
+
+    /* background-image: url('../images/planeta.png'); */
+    /* background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; */
+
+    background: url('../images/terra.png') repeat-x 0 0;
+    
+	box-shadow: -aqua 0 25px rgba(256,256,256,0.3), -1px -2px 14px rgba(256,256,256,0.5) inset;
+    
+    position: absolute;
+    left: 50px;
+    bottom: 0;
+    
+    border: 1px solid rgba(26,18,101,0.3);
+    border-radius: 50%;
+
+	animation: loop 90s linear infinite;
+    -webkit-animation: loop 90s linear infinite;
+	-moz-animation: loop 90s linear infinite;
+}
+
+@-webkit-keyframes loop {
+    0% { background-position: 0 0; }
+	100%{ background-position: -900px 0;}
+
+}
+@-moz-keyframes loop {
+    0% { background-position: 0 0; }
+	100%{ background-position: -900px 0;}
+
+}
+@keyframes loop {
+    0% { background-position: 0 0; }
+	100%{ background-position: -900px 0;}
+
+}
+
+#planeta:before{
+	content: "";
+	border-radius: 50%;
+	box-shadow: 80px -6px 25px rgba(0, 0, 0, .9) inset;
+	left: 0;
+	position:absolute;
+	top: 0;
+	height: var(--planetaDim);
+	width: var(--planetaDim);
+}
+
+
+#estacao{
+    --estacaoDim: 450px;
+    width: var(--estacaoDim);
+    height: var(--estacaoDim);
+
+    background-image: url('../images/estacao.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    right: 150px;
+
+    animation: estacao 15s ease-in-out infinite;
+}
+
+@keyframes estacao {
+    0% {
+        bottom: -25px;
+    }
+    50% {
+        bottom: 30px;
+    }
+    100%{
+        bottom: -25px;
+    }
+}
+
+#quemSomosText{
+    width: 50%;
+    background-color: aqua;
+}
+
+#quemSomosCards{
+    /* width: 60%;     */
+    
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 20px;
+
+    font-size: var(--fontSize);
+    /* background-color: aliceblue; */
+}
 .card{
-    width: 350px;
-    height: 400px;
-    padding: 30px 0;
+    width: 300px;
+    height: 300px;
+    padding: 20px 0;
     
     align-items: flex-start;
-    background: linear-gradient( 290deg, rgba(0, 0, 0, .6),  rgba(100, 100, 100, .6) );
+    background: linear-gradient( 290deg, rgba(0, 0, 0, .7),  rgba(100, 100, 100, .8) );
+    z-index: 5;
 
     border: 1px solid white;
     border-radius: 20px;
 }
 
+.card > p{
+    height: 100%;
+    padding: 8px 15px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    text-align: center;
+}
 .card > h3{
-    width: 85%;
+    width: 88%;
     padding-bottom: 20px;
     
     font-family: 'Audiowide', 'Arial';
@@ -28,17 +134,10 @@
     border-image: linear-gradient(to right, white,blue) 1;
 }
 
-.card > p{
-    height: 100%;
-    padding: 30px;
-    letter-spacing: 2px;
-    line-height: 30px;
-    text-align: center;
-}
 
 .card > ul{
     height: 100%;
-    padding: 30px;
+    padding: 10px;
     letter-spacing: 2px;
     line-height: 30px;
 }

@@ -1,3 +1,10 @@
+@media only screen and (max-width: 1100px) {
+    /* QUEM SOMOS */
+    #planeta{
+        bottom: 150px;
+    }
+}
+
 @media only screen and (max-width: 1000px) {
 
 
@@ -194,6 +201,18 @@
     #emailContent > form > input,
     #emailContent > form > p{
         width: 100%;
+    }
+
+
+    /* QUEM SOMOS */
+    #planeta{
+        /* left: 0; */
+        --planetaDim: 300px;
+    }
+
+    #estacao{
+        --estacaoDim: 300px;
+        right: 0;
     }
 
 }
