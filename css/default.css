@@ -83,8 +83,8 @@ body, html{
     width: var(--diameter);
     height: var(--diameter);
 
-    background-color: aliceblue;
-
+    transition: .5s ease-in-out;
+    
     position: fixed;
     bottom: var(--buttonSpace);
     right: var(--buttonSpace);
@@ -95,8 +95,9 @@ body, html{
         0 0 35px 1px rgb(146, 162, 235),
         0 0 40px 1px rgb(75, 255, 255);
 
-    border-radius: 50%;
-
+        border-radius: 50%;
+        
+    background-color: aliceblue;
     cursor: pointer;
 }
 
