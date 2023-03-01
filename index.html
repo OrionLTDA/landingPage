@@ -8,8 +8,10 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
 
   <title>.Orion Soluções</title>
-  <link rel="icon" type="image/png" href="./images/orionIcon.png"/>
+  <link rel="icon" type="image/png" href="./images/orionIcon.png" />
   <link rel="stylesheet" type="text/css" href="./css/default.css">
+  <link rel="stylesheet" type="text/css" href="./css/header.css">
+  <link rel="stylesheet" type="text/css" href="./css/navbar.css">
   <link rel="stylesheet" type="text/css" href="./css/home.css">
   <link rel="stylesheet" type="text/css" href="./css/quemSomos.css">
 
@@ -26,9 +28,66 @@
 </head>
 
 <body>
+  <header id="header" class="flex">
+    <nav class="navbar flex">
 
+      <ul class="flex">
 
-  <section id="home"class="flex background defaultSection">
+        <li class="flex list">
+          <a class="flex" href="#quemSomos">
+            <span class="icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
+
+            <span class="text">Sobre</span>
+          </a>
+        </li>
+
+        <li class="flex list">
+          <a class="flex" href="#nossosServicos">
+            <span class="icon">
+              <ion-icon name="cube-outline"></ion-icon>
+            </span>
+
+            <span class="text">Serviços</span>
+          </a>
+        </li>
+
+        <li class="flex list">
+          <a class="flex" href="#clientes">
+            <span class="icon">
+              <ion-icon name="people-outline"></ion-icon>
+            </span>
+
+            <span class="text">Clientes</span>
+          </a>
+        </li>
+
+        <li class="flex list">
+          <a class="flex" href="#contato">
+            <span class="icon">
+              <ion-icon name="call-outline"></ion-icon>
+            </span>
+
+            <span class="text">Contato</span>
+          </a>
+        </li>
+
+        <!-- <div class="indicator"></div> -->
+      </ul>
+
+      <div id="rocket" class="flex">
+        <div id="impulse"></div>
+        <ion-icon name="rocket"></ion-icon>
+      </div>
+    </nav>
+
+    <div id="menuBtn" class="flex">
+      <ion-icon name="menu"></ion-icon>
+    </div>
+  </header>
+
+  <section id="home" class="flex background defaultSection">
     <div id="astronauta"></div>
 
     <div id="orion" class="flex"></div>
@@ -50,31 +109,32 @@
     <!-- <div id="quemSomosText"></div> -->
 
     <!-- <div id="quemSomosCards" class="flex"> -->
-      <div id="surgimento" class="card flex">
-        <h3>Surgimento</h3>
-        <p>
-          A orion surgiu do sonho de trazer soluções tecnológicas
-          para os pequenos empreendedores do interior do estado
-          do Ceara de forma prática e acessível.
-        </p>
-      </div>
-  
-      <div id="missao" class="card flex">
-        <h3>Missão</h3>
-        <p>
-          Nossa missão é garantir que todos os clientes tenham seus processos automatizados de forma que não afete a sua produtividade.
-        </p>
-      </div>
-  
-      <div id="principios" class="card flex">
-        <h3>Princípios</h3>
-        <ul>
-          <li>Coletividade</li>
-          <li>Criatividade</li>
-          <li>Inovação</li>
-          <li>Comprometimento</li>
-        </ul>
-      </div>
+    <div id="surgimento" class="card flex">
+      <h3>Surgimento</h3>
+      <p>
+        A orion surgiu do sonho de trazer soluções tecnológicas
+        para os pequenos empreendedores do interior do estado
+        do Ceara de forma prática e acessível.
+      </p>
+    </div>
+
+    <div id="missao" class="card flex">
+      <h3>Missão</h3>
+      <p>
+        Nossa missão é garantir que todos os clientes tenham seus processos automatizados de forma que não afete a sua
+        produtividade.
+      </p>
+    </div>
+
+    <div id="principios" class="card flex">
+      <h3>Princípios</h3>
+      <ul>
+        <li>Coletividade</li>
+        <li>Criatividade</li>
+        <li>Inovação</li>
+        <li>Comprometimento</li>
+      </ul>
+    </div>
     <!-- </div> -->
   </section>
 
@@ -82,8 +142,8 @@
   <div class="divisor flex index">
     <p>Nossos serviços</p>
   </div>
-  
-  <section id="nossosServicos"class="flex index background defaultSection">
+
+  <section id="nossosServicos" class="flex index background defaultSection">
 
     <div id="titleNossosServicos">
       <h3>
@@ -97,7 +157,7 @@
         <div class="cardContent flex">
 
           <div id="softApp" class="cardIMG"></div>
-  
+
           <div class="cardTXT flex">
             <h3 class="cardTitle">Desenvolvimento de Software e Apps</h3>
             <p>
@@ -118,7 +178,7 @@
       <div class="cardS flex">
         <div class="cardContent flex">
           <div id="RPA" class="cardIMG"></div>
-  
+
           <div class="cardTXT flex">
 
             <h3 class="cardTitle">Virtualização de processos (RPA)</h3>
@@ -136,11 +196,11 @@
           </button>
         </div>
       </div>
-      
+
       <div class="cardS flex">
         <div class="cardContent flex">
           <div id="business" class="cardIMG"></div>
-  
+
           <div class="cardTXT flex">
             <h3 class="cardTitle">Business Inteligence</h3>
             <p>
@@ -160,7 +220,7 @@
       <div class="cardS flex">
         <div class="cardContent flex">
           <div id="sites" class="cardIMG"></div>
-  
+
           <div class="cardTXT flex">
             <h3 class="cardTitle">Desenvolvimento de sites</h3>
           </div>
@@ -178,7 +238,7 @@
         <div class="cardContent flex">
 
           <div id="marketing" class="cardIMG"></div>
-  
+
           <div class="cardTXT flex">
             <h3 class="cardTitle">Marketing digital</h3>
           </div>
@@ -190,10 +250,10 @@
             <ion-icon name="caret-forward-outline"></ion-icon>
           </button>
         </div>
-    </div>
+      </div>
 
   </section>
-  
+
   <!-- CLIENTES -->
   <div class="divisor flex index">
     <p>Clientes</p>
@@ -213,7 +273,10 @@
   <section id="contato" class="flex index background defaultSection">
     <div id="contatoDiv" class="flex">
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2815.237064791969!2d-38.50646247061441!3d-3.7344607316764002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c748606b3aaaab%3A0x3d50a2148013e98!2zT3Jpb24gU29sdcOnw7VlcyBUZWNub2zDs2dpY2Fz!5e0!3m2!1spt-BR!2sbr!4v1675518399964!5m2!1spt-BR!2sbr" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2815.237064791969!2d-38.50646247061441!3d-3.7344607316764002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c748606b3aaaab%3A0x3d50a2148013e98!2zT3Jpb24gU29sdcOnw7VlcyBUZWNub2zDs2dpY2Fz!5e0!3m2!1spt-BR!2sbr!4v1675518399964!5m2!1spt-BR!2sbr"
+        width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       <div class="contatos flex">
         <div class="email">
@@ -233,11 +296,11 @@
             <a href="https://www.linkedin.com/company/orionsoltec/">
               <img class="linkedinLogo sLogo" src="./images/linkedin.png" />
             </a>
-          
+
             <a href="https://www.instagram.com/orionsoltec/">
-              <img class="instagramLogo sLogo" src="./images/insta.png"/>
+              <img class="instagramLogo sLogo" src="./images/insta.png" />
             </a>
-            
+
           </div>
 
         </div>
@@ -249,7 +312,7 @@
 
   <footer id="footer" class="divisor flex">
     <p>
-      Orion Soluções em Tecnologia Unipessoal LTDA. CNPJ: 35.674.634/0001-04. 		
+      Orion Soluções em Tecnologia Unipessoal LTDA. CNPJ: 35.674.634/0001-04.
       Av. Santos Dumont, 2122. Sala 1207 - Fortaleza/CE.
     </p>
   </footer>
@@ -264,23 +327,24 @@
       <div id="cardShowContent" class="flex ">
         <h3 id="cardShowTitle"></h3>
         <p id="cardShowText"></p>
-  
+
         <button id="cardShowBtn" class="flex">
           <p id="cardShowBtnText"></p>
           <ion-icon name='mail-outline'></ion-icon>
         </button>
       </div>
     </div>
-    
+
     <div id="emailPanel" class="flex displayNone">
       <div id="emailContent" class="flex">
-        <form class="flex" action="https://formsubmit.co/comercial@orionsolucoes.com.br" method="POST" name="_captcha" value="false">
+        <form class="flex" action="https://formsubmit.co/comercial@orionsolucoes.com.br" method="POST" name="_captcha"
+          value="false">
           <p>Seu Nome:</p>
           <input name="nome" type="text" required />
           <p>E-Mail:</p>
           <input type="email" name="email" required />
           <p>Mensagem:</p>
-          <textarea name="mensagem"  required></textarea>
+          <textarea name="mensagem" required></textarea>
 
           <button id="subitEmail" type="submit" value="Enviar">
             <a target="_blank">Enviar</a>
@@ -288,16 +352,19 @@
         </form>
       </div>
     </div>
-  
+
     <div id="cardShowClose">
       <ion-icon name="close-circle-outline"></ion-icon>
     </div>
-    
+
   </div>
-  
+
 
   <!-- CARD QUEM SOMOS CONTROLLER -->
   <!-- <script src="./js/cardsController.js"></script> -->
+
+  <!-- MENU CONTROLLER -->
+  <script src="./js/menuBarController.js"></script>
 
   <!-- STARS CONTROLLER -->
   <script src="./js/starsBackground.js"></script>
@@ -316,27 +383,29 @@
 
     const cardShowBtn = $("#cardShowBtn");
 
-    card.click(function() {
+    card.click(function () {
       showCard()
       const content = $(this).find('.cardContent .cardTitle').text();
-      openCard ( content )
+      openCard(content)
     });
 
-    cardShowBtn.click(function() {
+    cardShowBtn.click(function () {
       showEmail()
     })
 
-    $("#subitEmail").click( function(e){  
+    $("#subitEmail").click(function (e) {
       close()
     });
-    
-    $("#cardShowClose").click( function(e){  
+
+    $("#cardShowClose").click(function (e) {
       close()
     });
 
   </script>
 
-  
+  <script>
+    
+  </script>
 
   <!-- ION-ICONS -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

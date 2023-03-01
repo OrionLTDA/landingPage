@@ -1,0 +1,96 @@
+.navbar{
+	width: 325px;
+    padding-left: 10px;
+
+    flex-flow: row;
+    justify-content: flex-start;
+
+    color: aliceblue;
+	/* background-color: blue; */
+
+    overflow: hidden;
+
+	border-radius: 10px;
+}
+
+.navbar ul{
+	width: 100%;
+	flex-flow: row;
+    justify-content: flex-start;
+    gap: 12px;
+
+    transition: .9s ease-in-out;
+    transform: translateX(-350px);
+}
+
+.navbar ul li{    
+    justify-content: space-between;
+
+    color: aliceblue;
+    /* background-color: brown; */
+}
+
+.navbar ul li a{
+    width: 100%;
+	
+    flex-flow: column;
+	text-align: center;
+	font-weight: 600;
+
+    color: aliceblue;
+}
+
+
+.navbar ul li a .icon{
+    color: aliceblue;
+
+	text-align: center;
+	
+	transition: 0.9s;
+}
+
+.navbar ul li a .text{
+	font-size: 14px;
+    font-weight: 550;
+	letter-spacing: 0.05em;	
+
+	color: aliceblue;
+	transition: 0.9s;
+}
+
+
+#rocket{
+    flex-flow: row;
+
+    transition: .9s ease-in-out;
+    transform: translateX(-350px);
+
+    position: absolute;
+    left: 270px;
+    z-index: 2;
+}
+
+#rocket > ion-icon{
+    font-size: xx-large;
+    color: white;
+    transform: rotateZ(45deg);
+}
+
+#impulse{
+    width: 8px;
+    height: 8px;
+
+    position: relative;
+    left: 5px;
+    z-index: 2;
+
+    background-color: orangered;
+
+    box-shadow: 
+        0 0 2px 1px orangered,
+        0 0 8px 1px red, 
+        0 0 12px 1px rgb(255, 0, 0);
+
+    border-top-left-radius: 15px;    
+    border-bottom-left-radius: 15px;    
+}

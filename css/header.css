@@ -1,0 +1,32 @@
+#header{
+    width: 100%;
+    padding: 10px 15px 10px 0;
+
+    color: white;
+    /* background-color: blue; */
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+#menuBtn{
+    padding: 5px;
+    
+    cursor: pointer;
+
+    font-size: xx-large;
+    border-radius: 50%;
+
+    box-shadow: 
+        0 0 10px 1px white,
+        0 0 15px 1px rgb(146 162 235), 
+        0 0 20px 1px rgb(75 255 255);
+
+    color: black;
+    background-color: white;
+}

@@ -282,6 +282,19 @@
         font-size: 25px;
     }
 
+    /* HEADER */
+    #rocket{
+        width: 0;
+        height: 0;
+    }
+
+    #impulse{
+        width: 0;
+        height: 0;
+
+        box-shadow: none;
+    }
+
     /* HOME */
     #sun{
         --sunDiameter: 250px;
@@ -311,12 +324,16 @@
     }
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 350px) {
     #orion > #orionTitle{
         font-size: 30px;
     }
 
-    
+    #planeta{
+        --planetaDim:250px;
+        left: 10px;
+    }
+
 
     #contatoDiv > iframe{
         width: 200px;
