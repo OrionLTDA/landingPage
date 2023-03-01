@@ -21,9 +21,8 @@
 .slide img{
     width: var(--sliderSize);
 }
-.slides input{
-    display: none;
-}
+
+
 
 .manual-navigation{
     width: 100%;
@@ -49,10 +48,10 @@
     margin-left: 0;
 }
 #radio2:checked ~ .first{
-    margin-left: calc( -1* var(--sliderSize)) ;
+    margin-left: calc( -1 * var(--sliderSize)) ;
 }
 #radio3:checked ~ .first{
-    margin-left: calc( -2* var(--sliderSize)) ;;
+    margin-left: calc( -2 * var(--sliderSize)) ;;
 }
 
 .btn{
