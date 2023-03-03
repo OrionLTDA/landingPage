@@ -28,6 +28,12 @@
 
 
 @media only screen and (max-width: 900px) {
+
+    /* HEADER */
+    #rocket{
+        left: 480px;
+    }
+
     /* QUEM SOMOS */
     .card{
         width: 450px;
@@ -192,6 +198,11 @@
         padding: 30px;
     }
 
+    /* HEADER */
+    #rocket{
+        left: 480px;
+    }
+
     /* SLIDER */
     :root{
         --sliderSize: 500px;
@@ -228,6 +239,16 @@
         font-size: 30px;
     }
 
+    /* HEADER */
+    .navbar{
+        width: 350px;
+    }
+
+    /* HEADER */
+    #rocket{
+        left: 360px;
+    }
+
     /* NOSSOS SERVICOS */
     .cardS{
         width: 80%;
@@ -262,6 +283,27 @@
         --sliderSize: 300px;
     }
 
+    /* HEADER */
+    .navbar{
+        width: 280px;
+    }
+
+    .navbar ul{    
+        gap: 12px;
+    }
+
+    .navbar ul li a .icon{
+        font-size: medium;
+    }
+
+    .navbar ul li a .text{
+        font-size: small;
+    }
+
+    #rocket{
+        left: 280px;
+    }
+    
     /* HOME */
     #orion{
         --orionDim: 240px;
@@ -282,7 +324,6 @@
         font-size: 25px;
     }
 
-    /* HEADER */
     #rocket{
         width: 0;
         height: 0;
@@ -376,7 +417,7 @@
 
     /* HOME */
     #orion{
-        top: 20%;
+        top: 100px;
     }
 }
 
@@ -384,16 +425,21 @@
 
     /* HOME */
     #orion{
-        top: 10%;
+        top: 70px;
         --orionDim: 240px;
     }
 
     #astronauta{
-        height: 280px;
+        height: 240px;
     }
 }
 
 @media only screen and (max-height: 400px) {
+
+    #orion{
+        top: 90px;
+        --orionDim: 240px;
+    }
 
     #astronauta{
         width: 150px;

@@ -1,9 +1,12 @@
+:root{
+    --navBarDist: -700px;
+}
+
 .navbar{
-	width: 325px;
-    padding-left: 10px;
+	width: 600px;
 
     flex-flow: row;
-    justify-content: flex-start;
+    justify-content: center;
 
     color: aliceblue;
 	/* background-color: blue; */
@@ -14,13 +17,14 @@
 }
 
 .navbar ul{
-	width: 100%;
 	flex-flow: row;
-    justify-content: flex-start;
-    gap: 12px;
+    justify-content: center;
+    gap: 18px;
 
     transition: .9s ease-in-out;
-    transform: translateX(-350px);
+    transform: translateX( var(--navBarDist) );
+
+    /* background-color: red; */
 }
 
 .navbar ul li{    
@@ -42,6 +46,7 @@
 
 
 .navbar ul li a .icon{
+    font-size: x-large;
     color: aliceblue;
 
 	text-align: center;
@@ -50,7 +55,7 @@
 }
 
 .navbar ul li a .text{
-	font-size: 14px;
+	font-size: large;
     font-weight: 550;
 	letter-spacing: 0.05em;	
 
@@ -63,10 +68,10 @@
     flex-flow: row;
 
     transition: .9s ease-in-out;
-    transform: translateX(-350px);
+    transform: translateX( var(--navBarDist) );
 
     position: absolute;
-    left: 270px;
+    left: 480px;
     z-index: 2;
 }
 

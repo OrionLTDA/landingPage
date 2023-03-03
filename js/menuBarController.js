@@ -32,11 +32,11 @@ menuBtn.on('click', () => {
         
     }else{
         menu.css({
-            'transform': 'translateX(-350px)'
+            'transform': 'translateX( var(--navBarDist) )'
         });
 
         rocket.css({
-            'transform': 'translateX(-350px)'
+            'transform': 'translateX( var(--navBarDist) )'
         });
         
         rocketIcon.css({

@@ -26,6 +26,10 @@
     border-radius: 20px;
 }
 
+#cardShowText{
+    width: 70%;
+}
+
 #cardShowBtn{
     padding: 20px 30px;
     gap: 10px;

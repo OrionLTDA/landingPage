@@ -1,6 +1,9 @@
+#footer{
+    justify-content: flex-start;
+}
 
 #footer > p{
-    font-size: 12px;
-    text-align: center;
-    width: 70%;
+    font-size: smaller;
+
+    width: 100%;
 }
