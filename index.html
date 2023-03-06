@@ -275,8 +275,9 @@
 
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2815.237064791969!2d-38.50646247061441!3d-3.7344607316764002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c748606b3aaaab%3A0x3d50a2148013e98!2zT3Jpb24gU29sdcOnw7VlcyBUZWNub2zDs2dpY2Fz!5e0!3m2!1spt-BR!2sbr!4v1675518399964!5m2!1spt-BR!2sbr"
-        width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+        width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
 
       <div class="contatos flex">
         <div class="email">
@@ -284,9 +285,20 @@
           <a>contato@orionsolucoes.com.br</a>
         </div>
 
-        <div class="telefone">
+        <div class="telefone flex">
           <p>Telefone para contato:</p>
           <p>(85) 3219-8874</p>
+          <p>ou</p>
+          <p>Fale agora:</p>
+
+          <div id="whatsapp" class="flex">
+            <a id="wpp" class="flex" href="https://api.whatsapp.com/send?text=&phone=5585991292178" target="_blank">
+              <img class="wppLogo sLogo" src="./images/wpp.png" />
+              <p>
+                (85) 99129-2178
+              </p>
+            </a>
+          </div>
         </div>
 
         <div class="redesSociais flex">
@@ -374,35 +386,15 @@
   <!-- SAIBA MAIS CARDS -->
   <script src="./js/saibaMaisCard.js"></script>
 
-  <!-- <script type="module"> -->
-    <!-- import { openCard } from "./js/saibaMaisCard.js"
+  <script>
 
-    let card = $(".cardS")
+    const orion = $("#orion")
 
-    const background = $("#cardShow");
-    const cardPanel = $("#cardShowContent");
-
-    const cardShowBtn = $("#cardShowBtn");
-
-    card.click(function () {
-      showCard()
-      const content = $(this).find('.cardContent .cardTitle').text();
-      openCard(content)
+    $( document ).ready(function() {
+        orion.addClass('loaded')
     });
 
-    cardShowBtn.click(function () {
-      showEmail()
-    })
-
-    $("#subitEmail").click(function (e) {
-      close()
-    });
-
-    $("#cardShowClose").click(function (e) {
-      close()
-    }); -->
-
-  <!-- </script> -->
+  </script>
 
   <script>
     

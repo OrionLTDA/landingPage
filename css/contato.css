@@ -20,6 +20,13 @@
 
     /* background-color: aqua; */
 }
+
+.telefone{
+    flex-flow: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
 .redesSociais{
     flex-flow: column;
     gap: 10px;
@@ -42,4 +49,18 @@
     height: 40px;
 
     cursor: pointer;
+}
+
+#whatsapp{
+    padding: 4px 5px;
+    
+    cursor: pointer;
+    background-color: green;
+    border-radius: 12px;
+}
+
+#wpp{
+    
+    flex-flow: row;
+    gap: 3px;
 }

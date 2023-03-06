@@ -1,8 +1,12 @@
-#home{
+:root{
+    --orionDim: 400px;
+}
+
+#home {
     height: 100%;
 }
 
-#astronauta{
+#astronauta {
     width: 180px;
     height: 350px;
     background-image: url("../images/astronauta.png");
@@ -14,24 +18,25 @@
     bottom: 0;
     z-index: 2;
     animation: astronauta 3s ease-in-out infinite;
-}    
-    
+}
+
 @keyframes astronauta {
     0% {
         bottom: 10px;
     }
+
     50% {
         bottom: 15px;
     }
-    100%{
+
+    100% {
         bottom: 10px;
     }
 }
 
-#orion{
-    --orionDim: 400px;
+#orion {
     width: var(--orionDim);
-    height: calc( var(--orionDim) / 5);
+    height: calc(var(--orionDim) / 5);
     padding: 5px;
 
     flex-flow: row;
@@ -42,18 +47,37 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    
+
     position: absolute;
-    top: 30%;           
+    top: 30%;
     z-index: 1;
+
+    opacity: 0;
+    
 }
 
-#orion > #orionTitle{
+.loaded {
+    animation: fadeIn 3s normal forwards ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        width: calc( var(--orionDim) - 50px );
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+#orion>#orionTitle {
     font-size: 60px;
     letter-spacing: 5px;
 }
 
-#sun{
+#sun {
     --sunDiameter: 400px;
     width: var(--sunDiameter);
     height: var(--sunDiameter);
@@ -68,5 +92,5 @@
 
     position: absolute;
     z-index: 1;
-    bottom: calc( (var(--sunDiameter) / -2 ) );
+    bottom: calc((var(--sunDiameter) / -2));
 }
