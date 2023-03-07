@@ -185,10 +185,34 @@
     
 
     /* FOOTER */
- 
-    #footer > p{
-        font-size: 10px;
-        width: 100%;
+    #footer{
+        flex-flow: column;
+        gap: 20px;
+        font-size: small;
+    }
+
+    #fixedFooter{
+        padding: 5px 10px;
+        font-size: small;
+    }
+
+    #fixedFooter > ul > li{
+        padding: 5px 10px;
+    }
+    
+    .ffIcon{
+        border-radius: 50%;
+        padding: 10px;
+        background-color: black;
+    }
+    
+    .fFooterContent{
+        gap: 3px;
+    }
+
+    .sfLogo{
+        width: 15px;
+        height: 15px;
     }
 
     
@@ -239,7 +263,15 @@
         --estacaoDim: 300px;
         right: 0;
     }
+    
+    /* FOOTER */
+    #footerText{
+        text-align: center;
+    }
 
+    .ffIcon{
+        padding: 5px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -327,6 +359,22 @@
     .clientesIcon{
         width: 150px;
         height: 150px;
+    }
+
+    /* FOOTER */
+    #fixedFooter {
+        padding: 5px 0px;
+    }
+    #podemosAjudar{
+        display: none;
+    }
+
+    #fixedFooter > ul{
+        justify-content: flex-start;
+    }
+
+    #fixedFooter > ul > li{
+        padding: 5px 5px;
     }
 }
 

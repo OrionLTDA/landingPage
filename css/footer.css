@@ -1,9 +1,75 @@
 #footer{
-    justify-content: flex-start;
+    padding: 20px;
+    padding-bottom: 90px;
+
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    font-size: medium;
+    
+    position: relative;
+    z-index: 2;
+
+}
+#footerText{
+    gap: 10px;
 }
 
-#footer > p{
-    font-size: smaller;
+#footerText > img{
+    width: 30px;
+    height: 30px;
+}
 
+.redesSociais{
+    gap: 10px;
+}
+
+
+.socialsLogos{
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.sfLogo{
+    width: 20px;
+    height: 20px;
+}
+
+.socialsLogos > a{
+    text-decoration:none;
+    /* color: white; */
+}
+
+
+#fixedFooter{
     width: 100%;
+    padding: 10px 30px;
+
+    background-color: var(--themeColor);
+
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+}
+#fixedFooter > ul{
+    width: 100%;
+}
+#fixedFooter > ul > li{
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+.ffDivisor{
+    border-left: 1px solid white;
+}
+
+.ffIcon{
+    border-radius: 50%;
+    padding: 12px;
+    background-color: black;
+}
+
+.fFooterContent{
+    gap: 5px;
 }

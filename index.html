@@ -9,6 +9,7 @@
 
   <title>.Orion Soluções</title>
   <link rel="icon" type="image/png" href="./images/orionIcon.png" />
+
   <link rel="stylesheet" type="text/css" href="./css/default.css">
   <link rel="stylesheet" type="text/css" href="./css/header.css">
   <link rel="stylesheet" type="text/css" href="./css/navbar.css">
@@ -260,9 +261,9 @@
   </div>
 
   <section id="clientes" class="flex index background defaultSection">
-    <a id="lindimais" class="clientesIcon" href="https://www.lindimais.com.br/"></a>
-    <a id="fastmedic" class="clientesIcon" href="https://www.fastmedic.com.br/"></a>
-    <a id="ufma" class="clientesIcon" href="https://portalpadrao.ufma.br/"></a>
+    <a id="lindimais" class="clientesIcon" href="https://www.lindimais.com.br/" target="_blank"></a>
+    <a id="fastmedic" class="clientesIcon" href="https://www.fastmedic.com.br/" target="_blank"></a>
+    <a id="ufma" class="clientesIcon" href="https://portalpadrao.ufma.br/" target="_blank"></a>
     <a id="brall" class="clientesIcon"></a>
   </section>
 
@@ -279,54 +280,83 @@
         referrerpolicy="no-referrer-when-downgrade">
       </iframe>
 
-      <div class="contatos flex">
-        <div class="email">
-          <p>E-mail:</p>
-          <a>contato@orionsolucoes.com.br</a>
-        </div>
+    </div>
+  </section>
 
-        <div class="telefone flex">
-          <p>Telefone para contato:</p>
-          <p>(85) 3219-8874</p>
-          <p>ou</p>
-          <p>Fale agora:</p>
+  <footer id="footer" class=" flex">
+    <div id="footerText" class="flex">
+      <img src="./images/orionIcon.png" />
 
-          <div id="whatsapp" class="flex">
-            <a id="wpp" class="flex" href="https://api.whatsapp.com/send?text=&phone=5585991292178" target="_blank">
-              <img class="wppLogo sLogo" src="./images/wpp.png" />
-              <p>
-                (85) 99129-2178
-              </p>
-            </a>
-          </div>
-        </div>
+      <p>
+        © Copyright 2023 .Orion Soluções Tecnologicas – Todos os direitos reservados.
+      </p>
+    </div>
 
-        <div class="redesSociais flex">
 
-          <p>Redes Sociais:</p>
-          <div class="socialsLogos flex">
-            <a href="https://www.linkedin.com/company/orionsoltec/">
-              <img class="linkedinLogo sLogo" src="./images/linkedin.png" />
-            </a>
+    <div class="redesSociais flex">
+      <p>Redes Sociais:</p>
+      <div class="socialsLogos flex">
+        <a href="https://www.linkedin.com/company/orionsoltec/" target="_blank">
+          <img class="linkedinLogo sfLogo" src="./images/linkedin.png" />
+        </a>
 
-            <a href="https://www.instagram.com/orionsoltec/">
-              <img class="instagramLogo sLogo" src="./images/insta.png" />
-            </a>
-
-          </div>
-
-        </div>
+        <a href="https://www.instagram.com/orionsoltec/" target="_blank">
+          <img class="instagramLogo sfLogo" src="./images/insta.png" />
+        </a>
 
       </div>
     </div>
 
+    
+  </footer>
+
+
+  <section id="fixedFooter" class="flex">
+    <ul class="flex">
+      <li id="podemosAjudar" class="flex">Podemos Ajudar?</li>
+
+      <li class="flex ">
+        <a class="fFooterContent flex" href="https://api.whatsapp.com/send?text=&phone=5585991292178" target="_blank">
+          <div class="ffIcon flex">
+            <img class="wppLogo sfLogo" src="./images/wpp.png" />
+          </div>
+
+          <div class="ffText">
+            <p>Falar por:</p>
+            <p>WhatsApp</p>
+          </div>
+        </a>
+      </li>
+
+      <li class="flex ffDivisor">
+        <a class="fFooterContent flex">
+          <div class="ffIcon flex">
+            <ion-icon class="sfLogo" name="call"></ion-icon>
+          </div>
+
+          <div class="ffText">
+            <p>Ligue para nós:</p>
+            <p>(85) 3219-8874</p>
+          </div>
+        </a>
+      </li>
+
+      <li id="ffSendEmail" class="flex ffDivisor">
+        <a class="fFooterContent flex">
+          <div class="ffIcon flex">
+            <ion-icon class="sfLogo" name="mail"></ion-icon>
+          </div>
+
+          <div class="ffText">
+            <p>Fale conosco:</p>
+            <p>Mande um E-Mail</p>
+          </div>
+        </a>
+      </li>
+
+    </ul>
   </section>
 
-  <footer id="footer" class="divisor flex">
-    <p>
-      © Copyright 2023 .Orion Soluções Tecnologicas – Todos os direitos reservados.
-    </p>
-  </footer>
 
   <a id="homeButton" class="flex" href="#home">
     <ion-icon name="arrow-up-outline"></ion-icon>
@@ -389,14 +419,12 @@
   <script>
 
     const orion = $("#orion")
+    // const astronauta = $("astronauta")
 
-    $( document ).ready(function() {
-        orion.addClass('loaded')
+    $(document).ready(function () {
+      orion.addClass('loaded')
+      // astronauta.addClass('loaded')
     });
-
-  </script>
-
-  <script>
     
   </script>
 
